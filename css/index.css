@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+}
+
+/* #MARKER header */
+header {
+    background-color: var(--bg-color-darker-shade);
+    cursor: default;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: stretch;
+    padding: 5px;
+}
+
+header > .flexItem {
+    flex-shrink: 1;
+    align-self: stretch;
+}
+
+/* #SECTION page title */
+header h1 {
+    font-size: 35px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 50px;
+}
+
+/* #SECTION nav */
+header nav {
+    display: block;
+    flex-grow: 100;
+}
+
+header nav ul {
+    background-color: #123;
+
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+    height: 100%;
+}
+
+header nav ul:hover {
+    color: #fff;
+    position: fixed;
+}
+
+header nav ul li {
+    display: none;
+}
+
+header nav ul:hover li {
+    display: block;
+}
+
+header nav ul li:first-of-type {
+    margin-top: 10px;
+}
+
+header nav a {
+    cursor: pointer;
+}
+
+/* #SECTION lang switch */
+header select.flexItem {
+    align-self: flex-start;
+}
+
+/* #MARKER main */
+
+main {
+    margin: 15px;
+}

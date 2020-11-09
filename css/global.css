@@ -1,0 +1,27 @@
+:root {
+    --font-color: #fafafafa;
+    --bg-color: #272a2e;
+    --bg-color-darker-shade: #18191b;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: URL('../resources/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: "OpenSans", "Segoe UI", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-size: 17px;
+}
+
+a {
+    color: #8c9eff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #acb8ff;
+    text-decoration: underline;
+}
