@@ -87,8 +87,8 @@ function reload() {
 
 function loadchanges() {
     if (getLang() == "de") {
-        document.getElementById("privacypolicy").href = "/privacypolicy/de";
-        document.getElementById("imprint").href = "/imprint/de";
+        document.getElementById("privacypolicy").href = "./privacypolicy_de";
+        document.getElementById("imprint").href = "./imprint_de";
 
         document.getElementById("github").title = langValues.de.github_title;
         document.getElementById("npm").title = langValues.de.npm_title;
@@ -109,8 +109,8 @@ function loadchanges() {
         document.getElementById("privacypolicy").textContent = langValues.de.privacy_policy;
         document.getElementById("imprint").textContent = langValues.de.imprint;
     } else {
-        document.getElementById("privacypolicy").href = "/privacypolicy/en";
-        document.getElementById("imprint").href = "/imprint/en";
+        document.getElementById("privacypolicy").href = "./privacypolicy_en";
+        document.getElementById("imprint").href = "./imprint_en";
 
         document.getElementById("github").title = langValues.en.github_title;
         document.getElementById("npm").title = langValues.en.npm_title;

@@ -138,10 +138,10 @@ main {
 #logo {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 10%;
     background-image: url(../resources/images/Sv443NetworkIcon.webp);
     background-size: cover;
-    margin: auto;
+    margin-left: auto;
 }
 
 #projects {
