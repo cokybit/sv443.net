@@ -2,7 +2,7 @@
 
 let langValues = {
     en: {
-        games_title: "My Games",
+        games_title: "Games",
         email_copied: "(E-Mail address copied to clipboard)",
         about_title: "About me:",
         github_title: "Sv443 on Github",
@@ -15,7 +15,7 @@ let langValues = {
         langbtn_title: "Wecshle zu Deutsch",
         privacy_policy: "Privacy Policy",
         imprint: "Legal Information",
-        jslib_title: "Visit the JSLib Github repository",
+        svcorelib_title: "Visit the SvCoreLib Github repository",
         langapplier_title: "Visit the LangApplier Github repository",
         ttp_title: "Visit the TamperTubePlus Github repository",
         skribbl_title: "Visit the skribbl.io Github repository",
@@ -23,7 +23,7 @@ let langValues = {
         jokeapi_title: "Visit the JokeAPI Website",
     },
     de: {
-        games_title: "Meine Spiele",
+        games_title: "Spiele",
         email_copied: "(E-Mail Adresse in die Zwischenablage kopiert)",
         about_title: "Über mich:",
         github_title: "Sv443 auf GitHub",
@@ -36,7 +36,7 @@ let langValues = {
         langbtn_title: "Switch to English",
         privacy_policy: "Datenschutzerklärung",
         imprint: "Impressum",
-        jslib_title: "Besuche die JSLib GitHub-Seite",
+        svcorelib_title: "Besuche die SvCoreLib GitHub-Seite",
         langapplier_title: "Besuche die LangApplier GitHub-Seite",
         ttp_title: "Besuche die TamperTubePlus GitHub-Seite",
         skribbl_title: "Besuche die skribbl.io+ GitHub-Seite",
@@ -96,7 +96,7 @@ function loadchanges() {
         document.getElementById("twitter").title = langValues.de.twitter_title;
         document.getElementById("email").title = langValues.de.email_title;
         document.getElementById("discord").title = langValues.de.discord_title;
-        document.getElementById("jslib").title = langValues.de.jslib_title;
+        document.getElementById("jslib").title = langValues.de.svcorelib_title;
         document.getElementById("langapplier").title = langValues.de.langapplier_title;
         document.getElementById("ttp").title = langValues.de.ttp_title;
         document.getElementById("skribbl").title = langValues.de.skribbl_title;
@@ -118,7 +118,7 @@ function loadchanges() {
         document.getElementById("twitter").title = langValues.en.twitter_title;
         document.getElementById("email").title = langValues.en.email_title;
         document.getElementById("discord").title = langValues.en.discord_title;
-        document.getElementById("jslib").title = langValues.en.jslib_title;
+        document.getElementById("jslib").title = langValues.en.svcorelib_title;
         document.getElementById("langapplier").title = langValues.en.langapplier_title;
         document.getElementById("ttp").title = langValues.en.ttp_title;
         document.getElementById("skribbl").title = langValues.en.skribbl_title;
@@ -167,17 +167,17 @@ const theme = new function () {
     }
     this.select = function (newtheme) {
         setCookie("theme_pref", newtheme, 7);
-        if (newtheme == "light") {
+        if (newtheme == "dark") {
             if (document.getElementsByClassName("ph-moon")[0]) {
                 document.getElementsByClassName("ph-moon")[0].classList.add("ph-sun");
                 document.getElementsByClassName("ph-moon")[0].classList.remove("ph-moon");
-                document.getElementById("cloudflare").querySelector("img").src = "resources/images/cloudflare-light.svg";
+                document.getElementById("cloudflare").querySelector("img").src = "resources/images/cloudflare-dark.svg";
             }
         } else {
             if (document.getElementsByClassName("ph-sun")[0]) {
                 document.getElementsByClassName("ph-sun")[0].classList.add("ph-moon");
                 document.getElementsByClassName("ph-sun")[0].classList.remove("ph-sun");
-                document.getElementById("cloudflare").querySelector("img").src = "resources/images/cloudflare-dark.svg";
+                document.getElementById("cloudflare").querySelector("img").src = "resources/images/cloudflare-light.svg";
             }
         }
         document.body.dataset.theme = newtheme;

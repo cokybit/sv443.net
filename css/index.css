@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Roboto&family=Roboto+Condensed&display=swap');
+
+
 .img-link {
     text-decoration: none;
     color: initial;
@@ -22,7 +25,14 @@ p {
 }
 
 header {
+    margin: 1em 15%;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        margin: 0.5em 10%;
+    }
 }
 
 #title {
@@ -31,9 +41,40 @@ header {
     margin: 30px 0;
 }
 
+@media (max-width: 600px) {
+    #title {
+        font-size: 35px;
+        margin: 15px 0;
+    }
+}
+
 #options {
+    position: absolute;
+    right: 15vw;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+#options div:first-child {
+    margin-right: 10px;
+}
+
+#options div:last-child {
+    margin-left: 10px;
+}
+
+@media (max-width: 750px) {
+    #options {
+        position: relative;
+        right: initial;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #options div:first-child {
+        margin-right: initial;
+    }
 }
 
 #themebtn {
@@ -52,7 +93,7 @@ header {
     transform: scale(1.1);
     transition: transform 0.3s;
     cursor: pointer;
-    color: #fd8c04;
+    color: #0475FD;
 }
 
 #langbtn {
@@ -80,7 +121,7 @@ header {
 }
 
 main {
-    margin: 1em 20%;
+    margin: 1em 15%;
 }
 
 #synopsis {
@@ -95,10 +136,10 @@ main {
 }
 
 #logo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    background-image: url(../resources/images/sv443.gif);
+    background-image: url(../resources/images/Sv443NetworkIcon.webp);
     background-size: cover;
     margin: auto;
 }
@@ -106,14 +147,14 @@ main {
 #projects {
     display: flex;
     flex-wrap: wrap;
-    margin: 2em 0;
-    justify-content: space-evenly;
+    margin: 1em 0;
+    justify-content: space-between;
 }
 
 #games, #scripts-websites {
     display: flex;
     flex-direction: column;
-    flex-basis: 45%;
+    flex-basis: 47.5%;
     margin-top: 2em;
     box-sizing: border-box;
 }
@@ -132,6 +173,11 @@ main {
     text-align: center;
 }
 
+.list-header h1 {
+    font-weight: normal;
+    margin: 15px 0;
+}
+
 .list {
     display: flex;
     padding: 15px;
@@ -143,19 +189,34 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3px;
 }
 
 .list-item-container > h4 {
+    font-family: "Roboto Condensed", "Roboto", "Segoe UI", sans-serif;
     margin: 0;
 }
 
-.circle {
-    width: 100px;
-    height: 100px;
+img.circle {
+    width: 65px;
+    height: 65px;
     margin: 10px;
     border-radius: 50%;
     box-sizing: border-box;
     background-size: cover;
+}
+
+img.square {
+    width: 65px;
+    height: 65px;
+    margin: 10px;
+    border-radius: 0%;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+img.rounded.square {
+    border-radius: 10px;
 }
 
 footer {
@@ -164,7 +225,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #f1f1f1;
 }
 
 footer a {
@@ -243,6 +304,16 @@ footer a:hover {
 @media (max-width: 800px) {
     main {
         margin: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        margin: 0.5rem;
+    }
+
+    body {
+        font-size: 85%;
     }
 }
 

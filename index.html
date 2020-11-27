@@ -31,80 +31,82 @@
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
         
-    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="194x194" href="/resources/favicons/favicon-194x194.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/resources/favicons/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
-    <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#101747">
-    <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="./resources/favicons/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./resources/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="./resources/favicons/safari-pinned-tab.svg" color="#101747">
+    <link rel="shortcut icon" href="./resources/favicons/favicon.ico">
     <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+    <meta name="msapplication-config" content="./resources/favicons/browserconfig.xml">
     <meta name="theme-color" content="#101747">
 </head>
 <body onload="indexonload();">
     <header>
-        <p id="title">Sv443 Network&trade;</p>
-    </header>
-    <main>
         <div id="options">
             <div id="themebtn" onclick="theme.change();">
-                <i class="ph-sun icon"></i>
+                <i class="ph-moon icon"></i>
             </div>
             <div id="langbtn" title="Wechsle zu Deutsch" onclick="switchLang();">
                 <i class="ph-translate icon"></i>
             </div>
         </div>
+        
+        <p id="title">Sv443 Network</p>
+    </header>
+    <main>
         <div id="synopsis">
             <div>
                 <div id="logo"></div>
             </div>
             <div style="display: flex; flex-direction: column;">
                 <p>A small network offering free to use and open source applications and services</p>
-                <a href="/ko-fi" class="img-link" target="_blank"><div>
-                    <img style="max-width: 100%;" src="resources/images/ko-fi_button.webp" alt="Ko-fi button">
+                <a href="./ko-fi" class="img-link" target="_blank"><div>
+                    <img style="max-width: 100%;" src="./resources/images/ko-fi_button.webp" alt="Ko-fi button">
                 </div></a>
             </div>
         </div>
         <div id="projects">
             <div id="scripts-websites">
                 <div class="list-header">
-                    <h1>Scripts/Websites</h1>
+                    <h1>Projects</h1>
                 </div>
                 <div class="list">
                     <a href="https://sv443.net/jokeapi/v2/" id="jokeapi" rel="noopener" class="img-link" title="Visit the JokeAPI Website" target="_blank"><div class="list-item-container">
-                        <img src="resources/images/jokeapi.webp" alt="JokeAPI icon" class="circle"></img>
+                        <img src="./resources/images/jokeapi.webp" alt="JokeAPI icon" class="square"></img>
                         <h4>JokeAPI</h4>
                     </div></a>
-                    <a href="https://github.com/Sv443/JSLib" id="jslib" rel="noopener" class="img-link" title="Visit the JSLib Github Repository" target="_blank"><div class="list-item-container">
-                        <img src="https://raw.githubusercontent.com/Sv443/JSLib/master/icon_v1.png" alt="JSLib icon" class="circle"></img>
-                        <h4>JSLib</h4>
+                    <a href="https://github.com/Sv443/SvCoreLib" id="svcorelib" rel="noopener" class="img-link" title="Visit the SvCoreLib Github Repository" target="_blank"><div class="list-item-container">
+                        <img src="./resources/images/svcorelib.webp" alt="SvCoreLib icon" class="square"></img>
+                        <h4>SvCoreLib</h4>
                     </div></a>
                     <a href="https://github.com/Sv443/LangApplier" id="langapplier" rel="noopener" class="img-link" title="Visit the LangApplier Gitub Repository" target="_blank"><div class="list-item-container">
-                        <img src="resources/images/langapplier.webp" alt="LangApplier icon" class="circle"></img>
+                        <img src="./resources/images/langapplier.webp" alt="LangApplier icon" class="rounded square"></img>
                         <h4>LangApplier</h4>
                     </div></a>
                     <a href="https://github.com/Sv443/TamperTubePlus" id="ttp" rel="noopener" class="img-link" title="Visit the TamperTubePlus Github Repository" target="_blank"><div class="list-item-container">
-                        <img src="resources/images/ttp.webp" alt="TamperTubePlus icon" class="circle"></img>
+                        <img src="./resources/images/ttp.webp" alt="TamperTubePlus icon" class="square"></img>
                         <h4>TamperTubePlus</h4>
                     </div></a>
                     <a href="https://github.com/Sv443/skribbl.io-plus" id="skribbl" rel="noopener" class="img-link" title="Visit the Skribbl.io+ Github Repository" target="_blank"><div class="list-item-container">
-                        <img src="https://raw.githubusercontent.com/Sv443/code/master/resources/favicons/skribbl.io%2B%20icon.png" alt="Skribbl.io icon" class="circle"></img>
-                        <h4>skribbl.io+</h4>
+                        <img src="https://raw.githubusercontent.com/Sv443/code/master/resources/favicons/skribbl.io%2B%20icon.png" alt="Skribbl.io icon" class="square"></img>
+                        <h4>Skribbl.io+</h4>
                     </div></a>
                 </div>
             </div>
+            <div class="horFlexSpacer"></div>
             <div id="games">
                 <div class="list-header">
-                    <h1 id="gamestitle">My Games</h1>
+                    <h1 id="gamestitle">Games</h1>
                 </div>
                 <div class="list">
-                    <a href="https://sv443.net/games/flappy_switch/index.html" id="flappyswitch" rel="noopener class="img-link" title="Play Flappy Switch" target="_blank"><div class="list-item-container">
-                        <img src="resources/images/flappy_switch.webp" alt="Flappy Switch icon" class="circle"></img>
+                    <a href="https://sv443.net/games/flappy_switch/index.html" id="flappyswitch" rel="noopener" class="img-link" title="Play Flappy Switch" target="_blank"><div class="list-item-container">
+                        <img src="./resources/images/flappy_switch.webp" alt="Flappy Switch icon" class="rounded square"></img>
                         <h4>Flappy Switch</h4>
                     </div></a>
                     <a href="https://sv443.github.io/TextAdventureGame/TextAdventureGame" id="textisland" rel="noopener" class="img-link" title="Play Text Island" target="_blank"><div class="list-item-container">
-                        <img src="https://raw.githubusercontent.com/Sv443/TextAdventureGame/master/icon_160x160.png" alt="Text Island icon" class="circle"></img>
+                        <img src="https://raw.githubusercontent.com/Sv443/TextAdventureGame/master/icon_160x160.png" alt="Text Island icon" class="rounded square"></img>
                         <h4>Text Island</h4>
                     </div></a>
                 </div>
@@ -116,35 +118,35 @@
             </div>
             <div class="list">
                 <a href="https://github.com/Sv443" id="github" rel="noopener" class="img-link" title="Sv443 on Github" target="_blank"><div class="list-item-container">
-                    <img src="resources/images/github.webp" alt="Github icon" class="circle"></img>
+                    <img src="./resources/images/github.webp" alt="Github icon" class="circle"></img>
                     <h4>Github</h4>
                 </div></a>
                 <a href="https://www.npmjs.com/~sv443" id="npm" rel="noopener" class="img-link" title="Sv443 on npm" target="_blank"><div class="list-item-container">
-                    <img src="resources/images/npm.webp" alt="npm icon" class="circle"></img>
+                    <img src="./resources/images/npm.webp" alt="npm icon" class="circle"></img>
                     <h4>npm</h4>
                 </div></a>
                 <a href="https://sv443.itch.io/" id="itch" rel="noopener" class="img-link" title="Sv443 on Itch.io" target="_blank"><div class="list-item-container">
-                    <img src="resources/images/itch.webp" alt="Itch.io icon" class="circle"></img>
+                    <img src="./resources/images/itch.webp" alt="Itch.io icon" class="circle"></img>
                     <h4>itch.io</h4>
                 </div></a>
                 <a href="https://www.linkedin.com/in/sven-fehler/" rel="noopener" class="img-link" title="My LinkedIn profile" target="_blank"><div class="list-item-container">
-                    <img src="resources/images/linkedin.webp" alt="LinkedIn icon" class="circle"></img>
+                    <img src="./resources/images/linkedin.webp" alt="LinkedIn icon" class="circle"></img>
                     <h4>LinkedIn</h4>
                 </div></a>
                 <a href="https://profile.codersrank.io/user/sv443" rel="noopener" class="img-link" title="My CodersRank profile" target="_blank"><div class="list-item-container">
-                    <img src="resources/images/codersrank.webp" alt="CodersRank icon" class="circle"></img>
+                    <img src="./resources/images/codersrank.webp" alt="CodersRank icon" class="circle"></img>
                     <h4>CodersRank</h4>
                 </div></a>
                 <a href="https://twitter.com/Sv443_dev" id="twitter" rel="noopener" class="img-link" title="Sv443 on Twitter" target="_blank"><div class="list-item-container">
-                    <img src="resources/images/twitter.webp" alt="Twitter icon" class="circle"></img>
+                    <img src="./resources/images/twitter.webp" alt="Twitter icon" class="circle"></img>
                     <h4>Twitter</h4>
                 </div></a>
                 <a onclick="copyemail();" id="email" class="img-link" title="Copies Sv443's E-Mail address to your clipboard"><div class="list-item-container">
-                    <img src="resources/images/email.webp" alt="Email icon" class="circle"></img>
+                    <img src="./resources/images/email.webp" alt="Email icon" class="circle"></img>
                     <h4>Email</h4>
                 </div></a>
                 <a href="/discord" id="discord" class="img-link" title="Join The Sv443 Network Discord Server" target="_blank"><div class="list-item-container">
-                    <img src="resources/images/discord.webp" alt="Discord icon" class="circle"></img>
+                    <img src="./resources/images/discord.webp" alt="Discord icon" class="circle"></img>
                     <h4>Discord</h4>
                 </div></a>
             </div>
@@ -153,11 +155,11 @@
     <footer>
         <div id="cloudflare">
             <a href="https://www.cloudflare.com" rel="noopener" class="img-link" target="_blank">
-            <img src="resources/images/cloudflare-light.svg" alt="Cloudflare icon" width="150px"></img>
+            <img src="./resources/images/cloudflare-light.svg" alt="Cloudflare icon" width="150px"></img>
             </a>
         </div>
         <div id="legal">
-            <h4><a id="privacypolicy" href="/privacypolicy/en" target="_blank">Privacy Policy</a> • <a id="imprint" href="/imprint/en" target="_blank">Legal Information</a></h4>
+            <h4><a id="privacypolicy" href="./privacypolicy/en" target="_blank">Privacy Policy</a> &bull; <a id="imprint" href="./imprint/en" target="_blank">Legal Information</a> &bull; <a id="license" href="./LICENSE" target="_blank">License</a></h4>
         </div>
     </footer>
     <div id="notif">

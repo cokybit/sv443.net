@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Roboto&family=Roboto+Condensed&display=swap');
+
+:root {
+    --bg-color-dark: #151515;
+    --bg-color-light: #f1f1f1;
+}
+
 * {
-    font-family: ubuntu, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -7,17 +14,19 @@ html {
 }
 
 body {
+    background-color: var(--bg-color-light);
+    color: black;
     margin: 0;
     padding: 0;
 }
 
 body[data-theme="light"] {
-    background-color: white;
+    background-color: var(--bg-color-light);
     color: black;
 }
 
 body[data-theme="dark"] {
-    background-color: #101010;
+    background-color: #151515;
     color: white;
 }
 
@@ -52,11 +61,11 @@ body[data-theme="spooky"] #langbtn {
 }
 
 body[data-theme="light"] #themebtn:hover {
-    color: #fd8c04;
+    color: #0475FD;
 }
 
 body[data-theme="dark"] #themebtn:hover {
-    color: #0475FD;
+    color: #fd8c04;
 }
 
 body[data-theme="light"] .list-header {
@@ -70,11 +79,11 @@ body[data-theme="dark"] .list-header {
 }
 
 body[data-theme="light"] footer {
-    background-color: #fff;
+    background-color: var(--bg-color-light);
 }
 
 body[data-theme="dark"] footer {
-    background-color: #101010;
+    background-color: var(--bg-color-dark);
 }
 
 body[data-theme="spooky"] footer {
@@ -89,7 +98,7 @@ body[data-theme="light"] h2 {
     color: black;
 }
 
-body[data-theme="light"] :not(#notifs h3) {
+body[data-theme="light"] :not(#notifs h3):not(a):not(#themebtn):not(.icon) {
     color: black;
 }
 
@@ -113,7 +122,7 @@ body[data-theme="dark"] h2 {
     color: white;
 }
 
-body[data-theme="dark"] :not(#notifs h3) {
+body[data-theme="dark"] :not(#notifs h3):not(a):not(#themebtn):not(.icon) {
     color: white;
 }
 
