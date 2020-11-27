@@ -1,75 +1,36 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="pagename" content="Sv443 Network Discord Server">
+    <meta name="application-name" content="Sv443 Network Discord Server">
+    <meta property="og:title" content="Sv443 Network Discord Server">
+    <meta name="description" content="Visit this website to join the official Sv443 Network Discord server.">
+    <meta name="twitter:card" content="Visit this website to join the official Sv443 Network Discord server.">
+    <meta property="og:description" content="Visit this website to join the official Sv443 Network Discord server.">
 
-		<meta name="pagename" content="Sv443 Network Discord Server"> <!--#SECTION-->
-		<meta name="application-name" content="Sv443 Network Discord Server"> <!--#SECTION-->
-		<meta property="og:title" content="Sv443 Network Discord Server"> <!--#SECTION-->
-		<meta name="description" content="Visit this website to join the official Sv443 Network Discord server."> <!--#SECTION-->
-		<meta name="twitter:card" content="Visit this website to join the official Sv443 Network Discord server."> <!--#SECTION-->
-		<meta property="og:description" content="Visit this website to join the official Sv443 Network Discord server."> <!--#SECTION-->
+    <meta name="HandheldFriendly" content="true">
+    <meta name="copyright" content="Sv443 - Licensed under the MIT license ( https://sv443.net/LICENSE )">
+    <meta name="author" content="Sv443 Network (contact@sv443.net - https://github.com/Sv443-Network)">
+    <meta property="og:url" content="https://sv443.net/">
+    <meta property="og:type" content="profile">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="HandheldFriendly" content="true">
-		<meta name="copyright" content="Sv443 - Licensed under the MIT license ( https://sv443.net/LICENSE )">
-		<meta name="author" content="Sv443 Network (contact@sv443.net - https://github.com/Sv443-Network)">
-		<meta property="og:url" content="https://sv443.net/">
-		<meta property="og:type" content="profile">
+    <meta property="og:image" content="cdn/other/icons_v3/Sv443NetworkIcon.jpg">
+    <link rel="icon" href="cdn/other/icons_v3/Sv443NetworkIcon.jpg">
 
-		<meta property="og:image" content="cdn/other/icons_v3/Sv443NetworkIcon.jpg">
-		<link rel="icon" href="cdn/other/icons_v3/Sv443NetworkIcon.jpg">
-
-		<meta http-equiv="refresh" content="2; URL=https://discord.gg/aBH4uRG"> <!--#SECTION-->
-
-
-		<style>
-		body {
-			font-family: "Segoe UI", "Arial", "Calibri", sans-serif;
-			background-color: #36393f;
-			color: #fff;
-			text-align: center;
-		}
-		main {
-			display: inline-block;
-			font-size: 20px;
-		}
-		a {
-			color: #8c9eff;
-			text-decoration: none;
-		}
-		a:hover {
-			color: #acb8ff;
-			text-decoration: underline;
-		}
-		</style>
-	</head>
-	<body>
-		<br><br><br>
-		<main>
-			You are being redirected to Discord.<br>
-			If not, please <a href="https://discord.gg/aBH4uRG" target="_self">click here.</a> <!--#SECTION-->
-		</main>
-		<script>
-			var redirectURL = "https://discord.gg/aBH4uRG"; //#SECTION
-
-			try
-			{
-                setTimeout(function() {
-                    window.location.replace(redirectURL);
-                }, 2000);
-			}
-			catch(err)
-			{
-                try
-                {
-                    window.location.href = redirectURL;
-                }
-                catch(err2)
-                {
-                    window.alert("Couldn't automatically redirect - Please visit this link manually: https://discord.gg/aBH4uRG"); //#SECTION
-                }
-			}
-		</script>
-	</body>
+    <meta http-equiv="refresh" content="2; URL=https://discord.gg/aBH4uRG">
+    <title>Sv443 - Discord</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/discord.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script type="text/javascript" src="js/redirect.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body onload="otheronload(); redirect('https://discord.gg/aBH4uRG');">
+    <main>
+        <h2>You are being redirected to Discord.</h2>
+        <h3>If not, please <a href="https://discord.gg/aBH4uRG" target="_self">click here</a></h3>
+    </main>
+</body>
 </html>
