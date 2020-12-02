@@ -46,29 +46,29 @@ let langValues = {
 };
 
 function otheronload() {
-    if (!Cookies.get("theme_pref")) {
-        setCookie("theme_pref", "light", 7);
-        theme.select("light");
-    } else if (Cookies.get("theme_pref") == "dark")
-        theme.select("dark");
-    else {
-        theme.select("light");
+    if (Cookies.get("cookie-consent") == "true") {
+        if (!Cookies.get("theme_pref")) {
+            setCookie("theme_pref", "light", 7);
+            theme.select("light");
+        } else if (Cookies.get("theme_pref") == "dark")
+            theme.select("dark");
+        else {
+            theme.select("light");
+        }
     }
 }
 
 function indexonload() {
     loadchanges();
-    if (Cookies.get("lang_pref") != "de" && Cookies.get("lang_pref") != "en") {
-        Cookies.remove("lang_pref");
-        reload();
-    }
-    if (!Cookies.get("theme_pref")) {
-        setCookie("theme_pref", "light", 7);
-        theme.select("light");
-    } else if (Cookies.get("theme_pref") == "dark")
-        theme.select("dark");
-    else {
-        theme.select("light");
+    if (Cookies.get("cookie-consent") == "true") {
+        if (!Cookies.get("theme_pref")) {
+            setCookie("theme_pref", "light", 7);
+            theme.select("light");
+        } else if (Cookies.get("theme_pref") == "dark")
+            theme.select("dark");
+        else {
+            theme.select("light");
+        }
     }
 
     if (window.location.search.substring(1).includes("epilepsy"))
@@ -96,7 +96,7 @@ function loadchanges() {
         document.getElementById("twitter").title = langValues.de.twitter_title;
         document.getElementById("email").title = langValues.de.email_title;
         document.getElementById("discord").title = langValues.de.discord_title;
-        document.getElementById("jslib").title = langValues.de.svcorelib_title;
+        document.getElementById("svcorelib").title = langValues.de.svcorelib_title;
         document.getElementById("langapplier").title = langValues.de.langapplier_title;
         document.getElementById("ttp").title = langValues.de.ttp_title;
         document.getElementById("skribbl").title = langValues.de.skribbl_title;
@@ -118,7 +118,7 @@ function loadchanges() {
         document.getElementById("twitter").title = langValues.en.twitter_title;
         document.getElementById("email").title = langValues.en.email_title;
         document.getElementById("discord").title = langValues.en.discord_title;
-        document.getElementById("jslib").title = langValues.en.svcorelib_title;
+        document.getElementById("svcorelib").title = langValues.en.svcorelib_title;
         document.getElementById("langapplier").title = langValues.en.langapplier_title;
         document.getElementById("ttp").title = langValues.en.ttp_title;
         document.getElementById("skribbl").title = langValues.en.skribbl_title;
@@ -137,26 +137,51 @@ function getLang() {
     var browserlang = navigator.language || navigator.userLanguage;
     if (Cookies.get("lang_pref"))
         return Cookies.get("lang_pref");
-    if (browserlang.includes("de")) {
-        setCookie("lang_pref", "de", 31);
-        return "de";
-    } else {
-        setCookie("lang_pref", "en", 31);
-        return "en";
+    if (Cookies.get("cookie-consent") == "true") {
+        if (browserlang.includes("de")) {
+            setCookie("lang_pref", "de", 31);
+            return "de";
+        } else {
+            setCookie("lang_pref", "en", 31);
+            return "en";
+        }
     }
+    return "en";
 }
 
 function switchLang() {
+    if (Cookies.get("cookie-consent") != "true") {
+        let notif = document.getElementById("notif");
+        document.getElementById("cookie-consent").style.display = "flex";
+        document.getElementById("cookie-consent").classList.add("fade-to-the-right");
+        notif.style.backgroundColor = "#F17E7E";
+        notif.style.color = "#931010";
+        notif.style.borderColor = "#EF6C6C";
+        notif.querySelector("h3").textContent = "Cookies need to be set to change the language";
+        notif.style.visibility = "visible";
+        notif.style.opacity = "1";
+        setTimeout(() => {
+            notif.style.opacity = "0";
+            notif.style.visibility = "hidden";
+        }, 2500);
+        return;
+    }
     var oldlang = getLang();
-    if (oldlang == "en")
-        setCookie("lang_pref", "de", 31);
-    if (oldlang == "de")
-        setCookie("lang_pref", "en", 31);
+    if (Cookies.get("cookie-consent") == "true") {
+        if (oldlang == "en")
+            setCookie("lang_pref", "de", 31);
+        if (oldlang == "de")
+            setCookie("lang_pref", "en", 31);
+    }
     reload();
 }
 
 const theme = new function () {
     this.change = function () {
+        if (Cookies.get("cookie-consent") != "true") {
+            document.getElementById("cookie-consent").style.display = "flex";
+            document.getElementById("cookie-consent").classList.add("fade-to-the-right");
+        }
         var oldtheme = document.body.dataset.theme;
         if (oldtheme == "dark") {
             var newtheme = "light";
@@ -166,7 +191,9 @@ const theme = new function () {
         theme.select(newtheme);
     }
     this.select = function (newtheme) {
-        setCookie("theme_pref", newtheme, 7);
+        if (Cookies.get("cookie-consent") == "true") {
+            setCookie("theme_pref", newtheme, 7);
+        }
         if (newtheme == "dark") {
             if (document.getElementsByClassName("ph-moon")[0]) {
                 document.getElementsByClassName("ph-moon")[0].classList.add("ph-sun");
@@ -199,12 +226,17 @@ function copyemail() {
     document.getElementById("copy").select();
     document.execCommand("copy");
     copyelem.remove();
-    document.getElementById("notif").style.visibility = "visible";
-    document.getElementById("notif").style.opacity = "1";
+    let notif = document.getElementById("notif");
+    notif.style.backgroundColor = "#cce5ff";
+    notif.style.color = "#004085";
+    notif.style.borderColor = "#b8daff";
+    notif.querySelector("h3").textContent = getLang() == "en" ? langValues.en.email_copied : langValues.de.email_copied;
+    notif.style.visibility = "visible";
+    notif.style.opacity = "1";
     setTimeout(() => {
-        document.getElementById("notif").style.opacity = "0";
-        document.getElementById("notif").style.visibility = "hidden";
-    }, 2000);
+        notif.style.opacity = "0";
+        notif.style.visibility = "hidden";
+    }, 2500);
 }
 
 var donce = false;
@@ -250,4 +282,10 @@ function setCookie(key, value, expires) {
         expires: expires,
         SameSite: "Strict"
     })
+}
+
+function consentGranted() {
+    document.getElementById("cookie-consent").style.display = "none";
+    setCookie("cookie-consent", "true", 365);
+    setCookie("theme_pref", document.body.dataset.theme, 31);
 }

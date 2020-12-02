@@ -141,7 +141,7 @@ main {
     border-radius: 10%;
     background-image: url(../resources/images/Sv443NetworkIcon.webp);
     background-size: cover;
-    margin-left: auto;
+    margin: auto;
 }
 
 #projects {
@@ -240,7 +240,7 @@ footer a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    margin: 0 20px;
 }
 
 #legal {
@@ -278,11 +278,57 @@ footer a:hover {
     text-align: center;
     visibility: hidden;
     opacity: 0;
-    transition: all 0.5s;
+    transition: visibility 0.5s, opacity 0.5s;
 }
 
 #notif h3 {
     margin: 0;
+}
+
+.fade-to-the-right {
+    animation: fade-to-the-right 0.8s;
+}
+
+@keyframes fade-to-the-right {
+    0% {
+        opacity: 0.1;
+        transform: translateX(-120%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#cookie-consent {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #edeef4;
+    padding: 5px 20px;
+    flex-basis: 100%;
+    font-size: 14px;
+}
+
+#consent-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    background-color: #D8D8D8;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+
+#consent-button:hover span {
+    color: #5aa469;
+}
+
+@media (max-width: 768px) {
+    #cookie-consent {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 512px) {
