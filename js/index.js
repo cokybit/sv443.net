@@ -86,51 +86,51 @@ function reload() {
 }
 
 function loadchanges() {
-    if (getLang() == "de") {
-        document.getElementById("privacypolicy").href = "./privacypolicy_de";
-        document.getElementById("imprint").href = "./imprint_de";
+    // if (getLang() == "de") {
+    //     document.getElementById("privacypolicy").href = "./privacypolicy_de";
+    //     document.getElementById("imprint").href = "./imprint_de";
 
-        document.getElementById("github").title = langValues.de.github_title;
-        document.getElementById("npm").title = langValues.de.npm_title;
-        document.getElementById("itch").title = langValues.de.itch_title;
-        document.getElementById("twitter").title = langValues.de.twitter_title;
-        document.getElementById("email").title = langValues.de.email_title;
-        document.getElementById("discord").title = langValues.de.discord_title;
-        document.getElementById("svcorelib").title = langValues.de.svcorelib_title;
-        document.getElementById("langapplier").title = langValues.de.langapplier_title;
-        document.getElementById("ttp").title = langValues.de.ttp_title;
-        document.getElementById("skribbl").title = langValues.de.skribbl_title;
-        document.getElementById("jokeapi").title = langValues.de.jokeapi_title;
-        document.getElementById("textisland").title = langValues.de.text_island_title;
-        document.getElementById("gamestitle").innerHTML = langValues.de.games_title;
-        document.getElementById("flappyswitch").title = langValues.de.flappy_switch_title;
-        document.getElementById("langbtn").title = langValues.de.langbtn_title;
-        document.getElementById("notif").querySelector("h3").textContent = langValues.de.email_copied;
-        document.getElementById("privacypolicy").textContent = langValues.de.privacy_policy;
-        document.getElementById("imprint").textContent = langValues.de.imprint;
-    } else {
-        document.getElementById("privacypolicy").href = "./privacypolicy_en";
-        document.getElementById("imprint").href = "./imprint_en";
+    //     document.getElementById("github").title = langValues.de.github_title;
+    //     document.getElementById("npm").title = langValues.de.npm_title;
+    //     document.getElementById("itch").title = langValues.de.itch_title;
+    //     document.getElementById("twitter").title = langValues.de.twitter_title;
+    //     document.getElementById("email").title = langValues.de.email_title;
+    //     document.getElementById("discord").title = langValues.de.discord_title;
+    //     document.getElementById("svcorelib").title = langValues.de.svcorelib_title;
+    //     document.getElementById("langapplier").title = langValues.de.langapplier_title;
+    //     document.getElementById("ttp").title = langValues.de.ttp_title;
+    //     document.getElementById("skribbl").title = langValues.de.skribbl_title;
+    //     document.getElementById("jokeapi").title = langValues.de.jokeapi_title;
+    //     document.getElementById("textisland").title = langValues.de.text_island_title;
+    //     document.getElementById("gamestitle").innerHTML = langValues.de.games_title;
+    //     document.getElementById("flappyswitch").title = langValues.de.flappy_switch_title;
+    //     document.getElementById("langbtn").title = langValues.de.langbtn_title;
+    //     document.getElementById("notif").querySelector("h3").textContent = langValues.de.email_copied;
+    //     document.getElementById("privacypolicy").textContent = langValues.de.privacy_policy;
+    //     document.getElementById("imprint").textContent = langValues.de.imprint;
+    // } else {
+    //     document.getElementById("privacypolicy").href = "./privacypolicy_en";
+    //     document.getElementById("imprint").href = "./imprint_en";
 
-        document.getElementById("github").title = langValues.en.github_title;
-        document.getElementById("npm").title = langValues.en.npm_title;
-        document.getElementById("itch").title = langValues.en.itch_title;
-        document.getElementById("twitter").title = langValues.en.twitter_title;
-        document.getElementById("email").title = langValues.en.email_title;
-        document.getElementById("discord").title = langValues.en.discord_title;
-        document.getElementById("svcorelib").title = langValues.en.svcorelib_title;
-        document.getElementById("langapplier").title = langValues.en.langapplier_title;
-        document.getElementById("ttp").title = langValues.en.ttp_title;
-        document.getElementById("skribbl").title = langValues.en.skribbl_title;
-        document.getElementById("jokeapi").title = langValues.en.jokeapi_title;
-        document.getElementById("textisland").title = langValues.en.text_island_title;
-        document.getElementById("gamestitle").innerHTML = langValues.en.games_title;
-        document.getElementById("flappyswitch").title = langValues.en.flappy_switch_title;
-        document.getElementById("langbtn").title = langValues.en.langbtn_title;
-        document.getElementById("notif").querySelector("h3").textContent = langValues.en.email_copied;
-        document.getElementById("privacypolicy").textContent = langValues.en.privacy_policy;
-        document.getElementById("imprint").textContent = langValues.en.imprint;
-    }
+    //     document.getElementById("github").title = langValues.en.github_title;
+    //     document.getElementById("npm").title = langValues.en.npm_title;
+    //     document.getElementById("itch").title = langValues.en.itch_title;
+    //     document.getElementById("twitter").title = langValues.en.twitter_title;
+    //     document.getElementById("email").title = langValues.en.email_title;
+    //     document.getElementById("discord").title = langValues.en.discord_title;
+    //     document.getElementById("svcorelib").title = langValues.en.svcorelib_title;
+    //     document.getElementById("langapplier").title = langValues.en.langapplier_title;
+    //     document.getElementById("ttp").title = langValues.en.ttp_title;
+    //     document.getElementById("skribbl").title = langValues.en.skribbl_title;
+    //     document.getElementById("jokeapi").title = langValues.en.jokeapi_title;
+    //     document.getElementById("textisland").title = langValues.en.text_island_title;
+    //     document.getElementById("gamestitle").innerHTML = langValues.en.games_title;
+    //     document.getElementById("flappyswitch").title = langValues.en.flappy_switch_title;
+    //     document.getElementById("langbtn").title = langValues.en.langbtn_title;
+    //     document.getElementById("notif").querySelector("h3").textContent = langValues.en.email_copied;
+    //     document.getElementById("privacypolicy").textContent = langValues.en.privacy_policy;
+    //     document.getElementById("imprint").textContent = langValues.en.imprint;
+    // }
 }
 
 function getLang() {
@@ -176,8 +176,8 @@ function switchLang() {
     reload();
 }
 
-const theme = new function () {
-    this.change = function () {
+const theme = {
+    change: function () {
         if (Cookies.get("cookie-consent") != "true") {
             document.getElementById("cookie-consent").style.display = "flex";
             document.getElementById("cookie-consent").classList.add("fade-to-the-right");
@@ -185,12 +185,14 @@ const theme = new function () {
         var oldtheme = document.body.dataset.theme;
         if (oldtheme == "dark") {
             var newtheme = "light";
+            document.getElementById("themebtn").title = "Switch to dark theme";
         } else {
             var newtheme = "dark";
+            document.getElementById("themebtn").title = "Switch to light theme";
         }
         theme.select(newtheme);
-    }
-    this.select = function (newtheme) {
+    },
+    select: function (newtheme) {
         if (Cookies.get("cookie-consent") == "true") {
             setCookie("theme_pref", newtheme, 7);
         }
@@ -208,24 +210,19 @@ const theme = new function () {
             }
         }
         document.body.dataset.theme = newtheme;
-    }
-    this.epilepsy = function () {
+    },
+    epilepsy: function () {
         setInterval(theme.change, 250);
-    }
-    this.spooky = function () {
+    },
+    spooky: function () {
         document.body.dataset.theme = "spooky";
     }
 }
 
 function copyemail() {
-    var text = atob("Y29udGFjdEBzdjQ0My5uZXQ=");
-    var copyelem = document.createElement("textarea");
-    copyelem.id = "copy";
-    copyelem.innerHTML = text;
-    document.body.appendChild(copyelem);
-    document.getElementById("copy").select();
-    document.execCommand("copy");
-    copyelem.remove();
+    var text = atob("Y29udGFjdEBzdjQ0My5uZXQ="); // anti crawler
+    copyText(text);
+
     let notif = document.getElementById("notif");
     notif.style.backgroundColor = "#cce5ff";
     notif.style.color = "#004085";
@@ -233,10 +230,22 @@ function copyemail() {
     notif.querySelector("h3").textContent = getLang() == "en" ? langValues.en.email_copied : langValues.de.email_copied;
     notif.style.visibility = "visible";
     notif.style.opacity = "1";
+
     setTimeout(() => {
         notif.style.opacity = "0";
         notif.style.visibility = "hidden";
     }, 2500);
+}
+
+function copyText(text)
+{
+    var copyelem = document.createElement("textarea");
+    copyelem.id = "copy";
+    copyelem.innerHTML = text;
+    document.body.appendChild(copyelem);
+    document.getElementById("copy").select();
+    document.execCommand("copy");
+    copyelem.remove();
 }
 
 var donce = false;
