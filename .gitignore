@@ -1,1 +1,10 @@
+admin/*
+api/*
 cdn/*
+dev/*
+dsgvo/*
+gamejam/*
+games/*
+phpmyadmin/*
+r/*
+!r/
