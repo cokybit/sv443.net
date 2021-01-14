@@ -1,0 +1,46 @@
+# Translation file for skribbl.io+ (v0.1)
+# Please only type the text inside the quotation marks in the paragraph with the following header:       ### YOUR LANGUAGE (translation) (please fill this out)
+# Please keep the [LINE BREAK] and [VIDEO TIME] tags and use them in your translation in the right spot
+# If you have any questions or don't understand something, please contact me via sven.fehler@web.de and I will gladly help you out!
+
+
+
+
+# Please also fill this out:
+
+# Your name is: ""                                       (will be displayed in the credits, thanks for your help :D )
+# Your contact: ""                                       (will also be displayed in the credits. This can be anything, from your GitHub to your Instagram profile, whatever you want. You can also leave it empty)
+# The language you translate to: ""                      (your languages full name, for example "english" or "russian" or "turkish" and so on)
+# Your languages two (or three) character code: ""       (for example, "en" for english, "ru" for russian, "tr" for turkish and so on)
+# Do you want to continue with the translation?: ""      (yes / no - do you want to get notified if I need some more translation?)
+
+
+
+
+
+###	ENGLISH (original) (don't override this, please fill out the translation below this paragraph):
+
+		delete message tooltip                           "Delete this message"
+        single word deleted (usage: message deleted)     "deleted"
+        download drawing title                           "Download Drawing"
+        download as png tooltip                          "Click to download the drawing as a PNG file"
+        single word with (usage: with skribbl.io+)       "with"
+        opens in a new tab tooltip                       "(Opens in a new tab)"
+
+		
+		
+		
+###	YOUR LANGUAGE (translation) (please fill this out):
+		
+		delete message tooltip                           ""
+        single word deleted (usage: message deleted)     ""
+        download drawing title                           ""
+        download as png tooltip                          ""
+        single word with (usage: with skribbl.io+)       ""
+        opens in a new tab tooltip                       ""
+		
+
+		
+		
+# Thank you very, very much for taking the time to improve the Script! I will add this translation to the next update.
+# If you want to contribute in any other way, like with the actual programming code or you want to suggest a feature I should add to the Script, feel free to contact me via sven.fehler@web.de

@@ -122,6 +122,7 @@ header {
 
 main {
     margin: 1em 15%;
+    padding-bottom: 50px;
 }
 
 #synopsis {
@@ -141,7 +142,8 @@ main {
     border-radius: 10%;
     background-image: url(../resources/images/Sv443NetworkIcon.webp);
     background-size: cover;
-    margin: auto;
+    margin-left: auto;
+    /* margin-right: 0; */
 }
 
 #projects {
@@ -220,8 +222,9 @@ img.rounded.square {
 }
 
 footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -332,6 +335,10 @@ footer a:hover {
 }
 
 @media (max-width: 512px) {
+    #logo {
+        margin-right: auto;
+    }
+
     footer {
         flex-direction: column;
     }

@@ -1,0 +1,59 @@
+# Translation file for TamperTubePlus (v1.6.0)
+# Please only type the text inside the quotation marks in the paragraph with the following header:       ### YOUR LANGUAGE (translation) (please fill this out)
+# Please keep the [LINE BREAK] and [VIDEO TIME] tags and use them in your translation in the right spot
+# If you have any questions or don't understand something, please contact me via sven.fehler@web.de and I will gladly help you out!
+
+
+
+
+# Please also fill this out:
+
+# Your name is: ""                                       (will be displayed in the credits, thanks for your help :D )
+# Your contact: ""                                       (will also be displayed in the credits. This can be anything, from your GitHub to your Instagram profile, whatever you want. You can also leave it empty)
+# The language you translate to: ""                      (your languages full name)
+# Your languages two (or three) character code: ""       (for example, "en" for english, "ru" for russian, "tr" for turkish and so on)
+# Do you want to continue with the translation?: ""      (yes / no - do you want to get notified if I need some more translation?)
+
+
+
+
+
+###	ENGLISH (original) (don't override this, please fill out the translation below this paragraph):
+
+        choose download format                  "Download video - choose format  [LINE BREAK]  Available Options: mp3,m4a,aac,flac,ogg,wma,mp4,avi,wmv,3gp"
+        wrong format + confirm download retry   "Entered value does not match available file formats (mp3,m4a,aac,flac,ogg,wma,mp4,avi,wmv,3gp)  [LINE BREAK]  Try again?"
+        enter search string                     "Enter search string:"
+        copied tags to clipboard                "Copied video tags to clipboard"
+        word copy                               "Copy"
+        copy to clipboard title                 "Copy tags to clipboard"
+        reload page to show new tags            "YouTube limitation - the document header needs to be reloaded after you click on a recommended video to load the new tags"
+        reload page to show new tags variation  "Reload page to show new tags"
+        open TamperTubePlus menu                "Open the TamperTubePlus menu"
+        download as mp3                         "Download as MP3"
+        download as mp4                         "Download as MP4"
+        reload video to show new tags           "Reload video to [VIDEO TIME] to show new tags? (If the time is incorrect, please cancel, pause the video, and try again!)"
+		
+		
+		
+		
+		
+###	YOUR LANGUAGE (translation) (please fill this out):
+		
+        choose download format                  ""
+        wrong format + confirm download retry   ""
+        enter search string                     ""
+        copied tags to clipboard                ""
+        word copy                               ""
+        copy to clipboard title                 ""
+        reload page to show new tags            ""
+        reload page to show new tags variation  ""
+        open TamperTubePlus menu                ""
+        download as mp3                         ""
+        download as mp4                         ""
+        reload video to show new tags           ""
+		
+
+		
+		
+# Thank you very, very much for taking the time to improve the Script! I will add this translation to the next update.
+# If you want to contribute in any other way, like with the actual programming code or you want to suggest a feature I should add to the Script, feel free to contact me via sven.fehler@web.de

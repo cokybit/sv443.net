@@ -1,0 +1,137 @@
+table {
+    vertical-align: top;
+}
+
+body {
+    background-color: #353535;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 1vw;
+}
+
+a {
+    color: #7289da;
+    text-decoration: none;
+    transition: color 0.4s ease-out;
+}
+
+a:hover {
+    color: #b2c3ff;
+    text-decoration: underline;
+    transition: color 0.1s linear;
+}  
+
+.cbox {
+    background-color: #232323;
+    padding: 0.5vw;
+    border: 0.2vw solid black;
+    border-radius: 0.7vw;
+}
+
+#pagewrapper {
+    margin-top: 0.8vw;
+    width: 50vw;
+    display: inline-block;
+}
+
+#dtitle {
+    font-size: 2vw;
+}
+
+#mtable {
+    width: auto;
+    display: inline-block;
+}
+
+#pfp {
+    width: 3.2vw;
+    margin-right: 0.5vw;
+    /*border: 0.15vw solid black;
+    border-radius: 0.6vw;
+    background-color: #353535;*/
+}
+
+#mtable td.l {
+    width: 1px;
+    text-align: left;
+}
+
+#mtable td.r {
+    width: 1px;
+    text-align: center;
+    padding-left: 1vw;
+}
+
+#btns {
+    display: inline-block;
+}
+
+#btns tr td.l {
+    width: 1px;
+    text-align: right;
+}
+
+#btns tr td.m {
+    width: 1px;
+}
+
+#btns tr td.r {
+    width: 1px;
+    text-align: left;
+}
+
+#btns button {
+    position: relative;
+    bottom: 0vh;
+
+    background-color: #373737;
+    color: white;
+
+    border-radius: 0.35vw;
+    border-width: 0.2vw;
+
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+
+    font-size: 1.5vw;
+
+    transition: background-color 0.4s ease-out, bottom 0.6s ease-out;
+}
+
+#btns button:hover {
+    position: relative;
+    bottom: 0.4vh;
+
+    background-color: #252525;
+    cursor: pointer;
+    transition: background-color 0.1s linear, bottom 0.2s ease-out;
+}
+
+#btns button:active {
+    border-color: #509950;
+}
+
+#btns td.l button {
+    border-color: #15aa15;
+}
+
+#btns td.r button {
+    border-color: #4747ee;
+}
+
+ul {
+    margin-top: 0;
+}
+
+li {
+    padding-bottom: 0.3vw;
+}
+
+i.botprefix {
+    text-decoration: none;
+    font-weight: 100;
+    font-style: normal;
+}
