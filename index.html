@@ -45,12 +45,12 @@
 <body onload="indexonload();">
     <header>
         <div id="options">
-            <div id="themebtn" onclick="theme.change();">
+            <div id="themebtn" onclick="theme.change()" title="Switch to dark theme">
                 <i class="ph-moon icon"></i>
             </div>
-            <div id="langbtn" title="Wechsle zu Deutsch" onclick="switchLang();">
+            <!--div id="langbtn" title="Wechsle zu Deutsch" onclick="switchLang();">
                 <i class="ph-translate icon"></i>
-            </div>
+            </div-->
         </div>
         
         <p id="title">Sv443 Network</p>
@@ -77,19 +77,19 @@
                         <img src="./resources/images/jokeapi.webp" alt="JokeAPI icon" class="square"></img>
                         <h4>JokeAPI</h4>
                     </div></a>
-                    <a href="https://github.com/Sv443/SvCoreLib" id="svcorelib" rel="noopener" class="img-link" title="Visit the SvCoreLib Github Repository" target="_blank"><div class="list-item-container">
-                        <img src="./resources/images/svcorelib.webp" alt="SvCoreLib icon" class="square"></img>
+                    <a href="https://github.com/Sv443/SvCoreLib" id="svcorelib" rel="noopener" class="img-link" title="Visit the SvCoreLib GitHub Repository" target="_blank"><div class="list-item-container">
+                        <img src="./resources/images/svcorelib.png" alt="SvCoreLib icon" class="square"></img>
                         <h4>SvCoreLib</h4>
                     </div></a>
-                    <a href="https://github.com/Sv443/LangApplier" id="langapplier" rel="noopener" class="img-link" title="Visit the LangApplier Gitub Repository" target="_blank"><div class="list-item-container">
+                    <a href="https://github.com/Sv443/LangApplier" id="langapplier" rel="noopener" class="img-link" title="Visit the LangApplier GitHub Repository" target="_blank"><div class="list-item-container">
                         <img src="./resources/images/langapplier.webp" alt="LangApplier icon" class="rounded square"></img>
                         <h4>LangApplier</h4>
                     </div></a>
-                    <a href="https://github.com/Sv443/TamperTubePlus" id="ttp" rel="noopener" class="img-link" title="Visit the TamperTubePlus Github Repository" target="_blank"><div class="list-item-container">
+                    <a href="https://github.com/Sv443/TamperTubePlus" id="ttp" rel="noopener" class="img-link" title="Visit the TamperTubePlus GitHub Repository" target="_blank"><div class="list-item-container">
                         <img src="./resources/images/ttp.webp" alt="TamperTubePlus icon" class="square"></img>
                         <h4>TamperTubePlus</h4>
                     </div></a>
-                    <a href="https://github.com/Sv443/skribbl.io-plus" id="skribbl" rel="noopener" class="img-link" title="Visit the Skribbl.io+ Github Repository" target="_blank"><div class="list-item-container">
+                    <a href="https://github.com/Sv443/skribbl.io-plus" id="skribbl" rel="noopener" class="img-link" title="Visit the Skribbl.io+ GitHub Repository" target="_blank"><div class="list-item-container">
                         <img src="https://raw.githubusercontent.com/Sv443/code/master/resources/favicons/skribbl.io%2B%20icon.png" alt="Skribbl.io icon" class="square"></img>
                         <h4>Skribbl.io+</h4>
                     </div></a>
@@ -117,9 +117,9 @@
                 <h1>Contact</h1>
             </div>
             <div class="list">
-                <a href="https://github.com/Sv443" id="github" rel="noopener" class="img-link" title="Sv443 on Github" target="_blank"><div class="list-item-container">
-                    <img src="./resources/images/github.webp" alt="Github icon" class="circle"></img>
-                    <h4>Github</h4>
+                <a href="https://github.com/Sv443" id="github" rel="noopener" class="img-link" title="Sv443 on GitHub" target="_blank"><div class="list-item-container">
+                    <img src="./resources/images/github.webp" alt="GitHub icon" class="circle"></img>
+                    <h4>GitHub</h4>
                 </div></a>
                 <a href="https://www.npmjs.com/~sv443" id="npm" rel="noopener" class="img-link" title="Sv443 on npm" target="_blank"><div class="list-item-container">
                     <img src="./resources/images/npm.webp" alt="npm icon" class="circle"></img>
@@ -153,13 +153,23 @@
         </div>
     </main>
     <footer>
+        <div id="cookie-consent">
+            <div>
+                <h3>This website uses cookies</h3>
+                <p>
+                    We use cookies to store site settings such as the theme.<br>
+                    Please accept the usage of cookies to enable these features.
+                </p>
+            </div>
+            <div id="consent-button" class="img-link" onclick="consentGranted();"><span>Accept Cookies</span></div>
+        </div>
         <div id="cloudflare">
             <a href="https://www.cloudflare.com" rel="noopener" class="img-link" target="_blank">
             <img src="./resources/images/cloudflare-light.svg" alt="Cloudflare icon" width="150px"></img>
             </a>
         </div>
         <div id="legal">
-            <h4><a id="privacypolicy" href="./privacypolicy_en" target="_blank">Privacy Policy</a> &bull; <a id="imprint" href="./imprint_en" target="_blank">Legal Information</a> &bull; <a id="license" href="./LICENSE" target="_blank">License</a></h4>
+            <h4><a id="privacypolicy" href="./privacypolicy/en" target="_blank">Privacy Policy</a> &bull; <a id="imprint" href="./imprint/en" target="_blank">Legal Information</a> &bull; <a id="license" href="./LICENSE" target="_blank">License</a></h4>
         </div>
     </footer>
     <div id="notif">

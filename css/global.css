@@ -26,7 +26,7 @@ body[data-theme="light"] {
 }
 
 body[data-theme="dark"] {
-    background-color: #151515;
+    background-color: var(--bg-color-dark);
     color: white;
 }
 
@@ -88,6 +88,38 @@ body[data-theme="dark"] footer {
 
 body[data-theme="spooky"] footer {
     background-color: #f9ac59;
+}
+
+body[data-theme="light"] #cookie-consent {
+    background-color: #edeef4;
+}
+
+body[data-theme="dark"] #cookie-consent {
+    background-color: #101010;
+}
+
+body[data-theme="light"] #consent-button {
+    background-color: #D8D8D8;
+}
+
+body[data-theme="dark"] #consent-button {
+    background-color: #202020;    
+}
+
+body[data-theme="light"] #consent-button span {
+    color: black;
+}
+
+body[data-theme="light"] #consent-button:hover span {
+    color: #5aa469;
+}
+
+body[data-theme="dark"] #consent-button span {
+    color: white;
+}
+
+body[data-theme="dark"] #consent-button:hover span {
+    color: #5aa469;
 }
 
 body[data-theme="light"] h1 {
