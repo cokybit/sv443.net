@@ -98,27 +98,27 @@ body[data-theme="dark"] #cookie-consent {
     background-color: #101010;
 }
 
-body[data-theme="light"] #consent-button {
+body[data-theme="light"] .cookieButton {
     background-color: #D8D8D8;
 }
 
-body[data-theme="dark"] #consent-button {
+body[data-theme="dark"] .cookieButton {
     background-color: #202020;    
 }
 
-body[data-theme="light"] #consent-button span {
+body[data-theme="light"] .cookieButton span {
     color: black;
 }
 
-body[data-theme="light"] #consent-button:hover span {
+body[data-theme="light"] .cookieButton:hover span {
     color: #5aa469;
 }
 
-body[data-theme="dark"] #consent-button span {
+body[data-theme="dark"] .cookieButton span {
     color: white;
 }
 
-body[data-theme="dark"] #consent-button:hover span {
+body[data-theme="dark"] .cookieButton:hover span {
     color: #5aa469;
 }
 

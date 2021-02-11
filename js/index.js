@@ -298,3 +298,7 @@ function consentGranted() {
     setCookie("cookie-consent", "true", 365);
     setCookie("theme_pref", document.body.dataset.theme, 31);
 }
+
+function consentDenied() {
+    document.getElementById("cookie-consent").style.display = "none";
+}

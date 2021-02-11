@@ -154,14 +154,15 @@
     </main>
     <footer>
         <div id="cookie-consent">
-            <div>
+            <div class="big">
                 <h3>This website uses cookies</h3>
                 <p>
                     We use cookies to store site settings such as the theme.<br>
-                    Please accept the usage of cookies to enable these features.
+                    Please accept the usage of functional cookies to enable these features.
                 </p>
             </div>
-            <div id="consent-button" class="img-link" onclick="consentGranted();"><span>Accept Cookies</span></div>
+            <div id="consent-button" class="img-link cookieButton" onclick="consentGranted();"><span>Accept</span></div>
+            <div id="deny-button" class="img-link cookieButton" onclick="consentDenied();"><span>Deny</span></div>
         </div>
         <div id="cloudflare">
             <a href="https://www.cloudflare.com" rel="noopener" class="img-link" target="_blank">
