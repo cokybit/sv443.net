@@ -239,13 +239,6 @@ footer a:hover {
     color: #6f85fc;
 }
 
-#cloudflare {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 20px;
-}
-
 #legal {
     display: flex;
     flex-direction: column;
