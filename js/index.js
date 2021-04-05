@@ -202,13 +202,11 @@ const theme = {
             if (document.getElementsByClassName("ph-moon")[0]) {
                 document.getElementsByClassName("ph-moon")[0].classList.add("ph-sun");
                 document.getElementsByClassName("ph-moon")[0].classList.remove("ph-moon");
-                document.getElementById("cloudflare").querySelector("img").src = "resources/images/cloudflare-dark.svg";
             }
         } else {
             if (document.getElementsByClassName("ph-sun")[0]) {
                 document.getElementsByClassName("ph-sun")[0].classList.add("ph-moon");
                 document.getElementsByClassName("ph-sun")[0].classList.remove("ph-sun");
-                document.getElementById("cloudflare").querySelector("img").src = "resources/images/cloudflare-light.svg";
             }
         }
         document.body.dataset.theme = newtheme;
