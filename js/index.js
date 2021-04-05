@@ -46,15 +46,17 @@ let langValues = {
 };
 
 function otheronload() {
-    if (Cookies.get("cookie-consent") == "true") {
-        if (!Cookies.get("theme_pref")) {
-            setCookie("theme_pref", "light", 7);
-            theme.select("light");
-        } else if (Cookies.get("theme_pref") == "dark")
-            theme.select("dark");
-        else {
-            theme.select("light");
-        }
+    // if (Cookies.get("cookie-consent") == "true") {
+    //     if (!Cookies.get("theme_pref")) {
+    //         setCookie("theme_pref", "light", 7);
+    //         theme.select("light");
+    //     } else 
+    if(Cookies.get("theme_pref") == "dark")
+    {
+        theme.select("dark");
+    }
+    else {
+        theme.select("light");
     }
 }
 

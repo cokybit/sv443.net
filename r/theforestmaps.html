@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="pagename" content="The Forest Enemy Patrol Routes v2">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="keywords" content="game,video game,sv443,the forest,the forest map,the forest enemy,enemies,cannibal,routes,patrol">
+        <meta name="description" content="An advanced map for The Forest showing you all cannibal patrol routes and where you shouldn't build a base.">
+        <meta name="twitter:card" content="An advanced map for The Forest showing you all cannibal patrol routes and where you shouldn't build a base.">
+        <meta name="subject" content="Video Games">
+        <meta name="copyright" content="Sv443 - Licensed under MIT license">
+        <meta name="author" content="Sv443 / Sven Fehler, sven.fehler@web.de">
+        <meta property="og:title" content="Sv443 / Sven Fehler">
+        <meta property="og:url" content="https://sv443.net/r/theforestmaps">
+        <meta property="og:description" content="An advanced map for The Forest showing you all cannibal patrol routes and where you shouldn't build a base.">
+        <meta property="og:image" content="https://sv443.net/r/resources/images/tfm_icon.png">
+        <meta property="og:type" content="profile"> 
+        <meta property="og:locale" content="en_US">
+        <meta property="og:locale:alternate" content="en_GB">
+        <meta property="og:locale:alternate" content="en_AU">
+        <meta name="application-name" content="Sv443 (Sven Fehler)">
+        <meta name="theme-color" content="#101747">
+
+        <link rel="icon" href="https://sv443.net/r/resources/images/tfm_icon.png">
+
+        <base target="blank_">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="css/tfm.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Sv443/jslib@1/jslib.js"></script>
+        <script src="js/tfm.js"></script>
+
+        <title>The Forest Enemy Patrol Routes v2</title>
+    </head>
+    <body>
+        <table id="menu">
+            <tr>
+                <td onclick="changeMap('complete')">
+                    Complete Map
+                </td>
+                <td onclick="changeMap('routesOnly')">
+                    Only Routes
+                </td>
+                <td onclick="changeMap('areasOnly')">
+                    Only Areas
+                </td>
+                <td onclick="changeMap('allNoMap')">
+                    Complete (Overlay)
+                </td>
+                <td onclick="changeMap('routesOnlyNoMap')">
+                    Only Routes (Overlay)
+                </td>
+                <td onclick="changeMap('areasOnlyNoMap')">
+                    Only Areas (Overlay)
+                </td>
+                <td onclick="Download('https:\/\/sv443.net/r/resources/images/tfm/completePDN.pdn')">
+                    PDN File
+                </td>
+            </tr>
+        </table>
+        <canvas id="mapCanvas"></canvas>
+
+        <div id="apB">The Forest Enemy Patrol Routes v2 by <a href="https://sv443.net/">Sv443</a> - Thanks to <a href="https://www.youtube.com/channel/UCY2i-o_WsKTcos0sdsyN_PA">Farket</a> for <a href="https://www.youtube.com/watch?v=dwSpp7fD22k">his previous work</a> on this map! - This page uses code from <a href="https://codepen.io/techslides/pen/zowLd">this codepen</a>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://sv443.net/">Contact Me</a></div>
+
+        <iframe id="dlIframe" style="display:none;"></iframe>
+
+        <script>
+            if(location.protocol != "http:" || window.location.href.includes("https://")) window.location.href = "http://sv443.ddns.net/r/theforestmaps?complete";
+            setTimeout(()=>{if(location.protocol != "http:" || window.location.href.includes("https://")) window.location.href = "http://sv443.ddns.net/r/theforestmaps?complete";},1000);
+            setTimeout(()=>{if(location.protocol != "http:" || window.location.href.includes("https://")) window.location.href = "http://sv443.ddns.net/r/theforestmaps?complete";},10000);
+        </script>
+    </body>
+</html>
