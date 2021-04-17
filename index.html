@@ -24,8 +24,8 @@
     <meta name="application-name" content="Sv443 Network - Homepage">
     <meta name="theme-color" content="#101747">
 
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Sv443 Network - Homepage</title>
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
@@ -38,6 +38,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicons/favicon-16x16.png">
     <link rel="mask-icon" href="./resources/favicons/safari-pinned-tab.svg" color="#101747">
     <link rel="shortcut icon" href="./resources/favicons/favicon.ico">
+    <link rel="stylesheet" href="./resources/other/fontawesome/css/all.css">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-config" content="./resources/favicons/browserconfig.xml">
     <meta name="theme-color" content="#101747">
@@ -158,18 +159,18 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div id="cookie-consent">
-            <div class="big">
-                <h3>This website uses cookies</h3>
-                <p>
-                    We use cookies to store site settings such as the theme.<br>
-                    Please accept the usage of functional cookies to enable these features.
-                </p>
-            </div>
-            <div id="consent-button" class="img-link cookieButton" onclick="consentGranted();"><span>Accept</span></div>
-            <div id="deny-button" class="img-link cookieButton" onclick="consentDenied();"><span>Deny</span></div>
+    <div id="cookie-consent">
+        <div class="big">
+            <h3>This feature requires cookies</h3>
+            <p>
+                We use cookies to store site settings such as the theme.<br>
+                Please accept the usage of functional cookies to enable these features.
+            </p>
         </div>
+        <div id="consent-button" class="img-link cookieButton" onclick="consentGranted();"><span><i class="fas fa-check"></i>&nbsp;Accept</span></div>
+        <div id="deny-button" class="img-link cookieButton" onclick="consentDenied();"><span><i class="fas fa-times"></i>&nbsp;Deny</span></div>
+    </div>
+    <footer>
         <div></div>
         <div id="legal">
             <h4><a id="privacypolicy" href="./privacypolicy/en" target="_blank">Privacy Policy</a> &bull; <a id="imprint" href="./imprint/en" target="_blank">Legal Information</a> &bull; <a id="license" href="./LICENSE" target="_blank">License</a></h4>

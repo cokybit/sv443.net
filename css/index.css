@@ -17,7 +17,6 @@
 
 .img-link:visited {
     color: initial;
-
 }
 
 p {
@@ -222,9 +221,9 @@ img.rounded.square {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -298,13 +297,20 @@ footer a:hover {
 }
 
 #cookie-consent {
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+
     display: none;
     justify-content: space-around;
     align-items: center;
-    background-color: #edeef4;
-    padding: 5px 300px;
+    padding: 5px 100px;
     flex-basis: 100%;
-    font-size: 14px;
+    font-size: 16px;
+
+    border-top-right-radius: 25px;
+
+    /** bgcolor is in global.css */
 }
 
 #cookie-consent > div.big {
@@ -316,14 +322,20 @@ footer a:hover {
     align-items: center;
     justify-content: center;
     height: 25px;
-    background-color: #D8D8D8;
     border-radius: 30px;
     padding: 10px 15px;
     margin: 10px 5px;
+
+    border-style: none solid solid none;
+    border-width: 3px;
 }
 
-.cookieButton:hover span {
-    color: #5aa469;
+.cookieButton .fa-check {
+    color: #3d813d !important;
+}
+
+.cookieButton .fa-times {
+    color: #a14545 !important;
 }
 
 @media (max-width: 768px) {
