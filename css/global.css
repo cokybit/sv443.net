@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Roboto&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
     --bg-color-dark: #151515;
@@ -6,7 +6,7 @@
 }
 
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Segoe UI", "Calibri", "San Francisco", sans-serif;
 }
 
 html {
@@ -91,35 +91,29 @@ body[data-theme="spooky"] footer {
 }
 
 body[data-theme="light"] #cookie-consent {
-    background-color: #edeef4;
+    background-color: #9d9ea1;
 }
 
 body[data-theme="dark"] #cookie-consent {
-    background-color: #101010;
+    background-color: #080808;
 }
 
 body[data-theme="light"] .cookieButton {
     background-color: #D8D8D8;
+    border-color: #666; /*  :O  */ 
 }
 
 body[data-theme="dark"] .cookieButton {
     background-color: #202020;    
+    border-color: #474747;    
 }
 
-body[data-theme="light"] .cookieButton span {
+body[data-theme="light"] .cookieButton span:not(.fas) {
     color: black;
 }
 
-body[data-theme="light"] .cookieButton:hover span {
-    color: #5aa469;
-}
-
-body[data-theme="dark"] .cookieButton span {
+body[data-theme="dark"] .cookieButton span:not(.fas) {
     color: white;
-}
-
-body[data-theme="dark"] .cookieButton:hover span {
-    color: #5aa469;
 }
 
 body[data-theme="light"] h1 {
@@ -154,9 +148,9 @@ body[data-theme="dark"] h2 {
     color: white;
 }
 
-body[data-theme="dark"] :not(#notifs h3):not(a):not(#themebtn):not(.icon) {
+/* body[data-theme="dark"] :not(#notifs h3):not(a):not(#themebtn):not(.icon) {
     color: white;
-}
+} */
 
 body[data-theme="dark"] h4 {
     color: white;
