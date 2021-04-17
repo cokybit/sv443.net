@@ -43,6 +43,8 @@
     <meta name="theme-color" content="#101747">
 </head>
 <body onload="indexonload();">
+    <!-- TODO: replace all webp images with png -->
+    <!-- TODO: make footer non-sticky -->
     <header>
         <div id="options">
             <div id="themebtn" onclick="theme.change()" title="Switch to dark theme">
@@ -101,6 +103,10 @@
                     <h1 id="gamestitle">Games</h1>
                 </div>
                 <div class="list">
+                    <a href="https://github.com/Sv443/Townly#readme" id="townly" rel="noopener" class="img-link" title="Play Townly" target="_blank"><div class="list-item-container">
+                        <img src="./resources/images/townly.png" alt="Townly icon" class="rounded square"></img>
+                        <h4>Townly</h4>
+                    </div></a>
                     <a href="https://sv443.net/games/flappy_switch/index.html" id="flappyswitch" rel="noopener" class="img-link" title="Play Flappy Switch" target="_blank"><div class="list-item-container">
                         <img src="./resources/images/flappy_switch.png" alt="Flappy Switch icon" class="rounded square"></img>
                         <h4>Flappy Switch</h4>
@@ -154,20 +160,17 @@
     </main>
     <footer>
         <div id="cookie-consent">
-            <div>
+            <div class="big">
                 <h3>This website uses cookies</h3>
                 <p>
                     We use cookies to store site settings such as the theme.<br>
-                    Please accept the usage of cookies to enable these features.
+                    Please accept the usage of functional cookies to enable these features.
                 </p>
             </div>
-            <div id="consent-button" class="img-link" onclick="consentGranted();"><span>Accept Cookies</span></div>
+            <div id="consent-button" class="img-link cookieButton" onclick="consentGranted();"><span>Accept</span></div>
+            <div id="deny-button" class="img-link cookieButton" onclick="consentDenied();"><span>Deny</span></div>
         </div>
-        <div id="cloudflare">
-            <a href="https://www.cloudflare.com" rel="noopener" class="img-link" target="_blank">
-            <img src="./resources/images/cloudflare-light.svg" alt="Cloudflare icon" width="150px"></img>
-            </a>
-        </div>
+        <div></div>
         <div id="legal">
             <h4><a id="privacypolicy" href="./privacypolicy/en" target="_blank">Privacy Policy</a> &bull; <a id="imprint" href="./imprint/en" target="_blank">Legal Information</a> &bull; <a id="license" href="./LICENSE" target="_blank">License</a></h4>
         </div>
