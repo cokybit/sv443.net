@@ -27,10 +27,11 @@
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Sv443 Network - Homepage</title>
+
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-        
+    <script src="js/index.js"></script>
+
     <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="194x194" href="./resources/favicons/favicon-194x194.png">
@@ -44,8 +45,6 @@
     <meta name="theme-color" content="#101747">
 </head>
 <body onload="indexonload();">
-    <!-- TODO: replace all webp images with png -->
-    <!-- TODO: make footer non-sticky -->
     <header>
         <div id="options">
             <div id="themebtn" onclick="theme.change()" title="Switch to dark theme">
@@ -64,10 +63,12 @@
                 <div id="logo"></div>
             </div>
             <div style="display: flex; flex-direction: column;">
-                <p>A small network offering free to use and open source applications and services</p>
-                <a href="./ko-fi" class="img-link" target="_blank"><div>
-                    <img style="max-width: 100%;" src="./resources/images/ko-fi_button.png" alt="Ko-fi button">
-                </div></a>
+                <p>A small network offering free to use and open source applications and services.</p>
+                <a href="./ko-fi" class="img-link not-block" target="_blank">
+                    <div class="ilb">
+                        <img id="kofi-img" style="max-width: 100%;" src="./resources/images/ko-fi_button.png" alt="Ko-fi button">
+                    </div>
+                </a>
             </div>
         </div>
         <div id="projects">

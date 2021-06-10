@@ -4,19 +4,30 @@
 .img-link {
     text-decoration: none;
     color: initial;
-    transition: transform 0.2s;
     cursor: pointer;
 }
 
-.img-link:hover {
+.img-link:not(.not-block) {
+    transition: transform 0.2s;
+}
+
+.img-link:not(.not-block):hover {
     transform: scale(1.1);
     transition: transform 0.5s;
-    color: initial;
-    text-decoration: initial;
 }
 
 .img-link:visited {
     color: initial;
+}
+
+.img-link > div.ilb {
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.img-link > div.ilb:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 p {
@@ -196,6 +207,10 @@ main {
 .list-item-container > h4 {
     font-family: "Roboto Condensed", "Roboto", "Segoe UI", sans-serif;
     margin: 0;
+}
+
+#kofi-img {
+    width: 250px;
 }
 
 img.circle {
