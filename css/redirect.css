@@ -30,6 +30,12 @@ main {
     text-align: center;
 }
 
+img#logo {
+    display: block;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
 h1 {
     margin: 26px 0;
 }
