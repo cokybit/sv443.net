@@ -20,12 +20,12 @@
     color: initial;
 }
 
-#kofi-link {
+#support-link {
     display: inline-block;
     transition: transform 0.2s;
 }
 
-#kofi-link:hover {
+#support-link:hover {
     transform: scale(1.1);
     transition: transform 0.5s;
 }
@@ -39,22 +39,28 @@ header {
     text-align: center;
 }
 
+@media (max-width: 750px) {
+    header {
+        margin: 0.7em 5%;
+    }
+}
+
 @media (max-width: 600px) {
     header {
-        margin: 0.5em 10%;
+        margin: 0.4em 3%;
     }
 }
 
 #title {
     text-align: center;
     font-size: 40px;
-    margin: 30px 0;
+    margin: 15px 0;
 }
 
 @media (max-width: 600px) {
     #title {
         font-size: 35px;
-        margin: 15px 0;
+        margin: 10px 0;
     }
 }
 
@@ -74,16 +80,9 @@ header {
     margin-left: 10px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
     #options {
-        position: relative;
-        right: initial;
-        text-align: center;
-        justify-content: center;
-    }
-
-    #options div:first-child {
-        margin-right: initial;
+        right: 0;
     }
 }
 
@@ -209,8 +208,24 @@ main {
     margin: 0;
 }
 
-#kofi-img {
-    width: 250px;
+#support-img {
+    width: 440px;
+}
+
+@media (max-width: 1300px) {
+    #logo {
+        margin: auto;
+    }
+
+    #support-img {
+        min-width: 440px;
+    }
+}
+
+@media (max-width: 600px) {
+    #support-img {
+        min-width: 300px;
+    }
 }
 
 img.circle {
@@ -369,7 +384,7 @@ footer a:hover {
     }
 
     #legal > h4 {
-        font-size: 14px;
+        font-size: 16px;
         margin: 15px 5px;
     }
 
@@ -391,17 +406,15 @@ footer a:hover {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     main {
         margin: 0.5rem;
     }
 
     body {
-        font-size: 85%;
+        font-size: calc(1em - 2px);
     }
-}
 
-@media (max-width: 512px) {
     #synopsis {
         margin: 0;
     }
@@ -409,9 +422,7 @@ footer a:hover {
     #synopsis > div {
         flex-basis: 80%;
     }
-}
 
-@media (max-width: 512px) {
     #games, #scripts-websites {
         flex-basis: 100%;
     }
