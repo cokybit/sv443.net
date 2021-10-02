@@ -287,7 +287,7 @@ function getspooked() {
     spook3div.appendChild(spook3);
     document.getElementsByTagName("main")[0].append(spook3div);
 
-    document.getElementById("title").innerHTML = "🎃 Spook443 🎃";
+    document.getElementById("title").innerHTML = "🎃 Spook443 Network 🎃";
 }
 
 function setCookie(key, value, expires) {
