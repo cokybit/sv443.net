@@ -73,13 +73,16 @@ function indexonload() {
         }
     }
 
-    if (window.location.search.substring(1).includes("epilepsy"))
+    const queryStr = window.location.search.substring(1);
+    const d = new Date();
+
+    if (queryStr.includes("epilepsy"))
         theme.epilepsy();
-    if (window.location.search.substring(1).includes("wtf"))
+    if (queryStr.includes("wtf"))
         rbow({
             "keyCode": 16
         });
-    if (window.location.search.substring(1).includes("spook_mode"))
+    if(d.getMonth() == 9 && d.getDate() == 31 || queryStr.includes("spook_mode"))
         getspooked();
 }
 
@@ -254,7 +257,7 @@ function rbow(e) {
         donce = true;
         document.getElementById("title").dataset.disco = "true";
         let stel = document.createElement("style");
-        stel.innerHTML = "*{transform:rotate(1900deg);transition:transform 1000s linear;}";
+        stel.innerHTML = "*{transform:rotate(2300deg);transition:transform 1000s linear;}";
         document.head.appendChild(stel);
     }
 }
@@ -262,6 +265,7 @@ function rbow(e) {
 function getspooked() {
     theme.spooky();
     var audio = new Audio("resources/audio/spooktune.mp3");
+    audio.volume = 0.5;
     audio.play();
     audio.loop = true;
 
