@@ -1,0 +1,11 @@
+body {
+    background-color: var(--bg-color-dark);
+    color: white;
+    margin: 30px;
+}
+
+
+#title {
+    margin-bottom: 10px;
+    font-size: 1.75em;
+}
