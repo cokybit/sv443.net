@@ -80,12 +80,6 @@ header {
     margin-left: 10px;
 }
 
-@media (max-width: 600px) {
-    #options {
-        right: 0;
-    }
-}
-
 #themebtn {
     display: flex;
     justify-content: center;
@@ -334,6 +328,14 @@ body[data-theme="light"] footer a:hover {
     }
 }
 
+#consentButtonWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    margin-left: 25px;
+}
+
 #cookie-consent {
     position: fixed;
     bottom: 0;
@@ -360,6 +362,7 @@ body[data-theme="light"] footer a:hover {
     align-items: center;
     justify-content: center;
     height: 25px;
+    min-width: 60px;
     border-radius: 30px;
     padding: 10px 15px;
     margin: 10px 5px;
@@ -368,17 +371,54 @@ body[data-theme="light"] footer a:hover {
     border-width: 3px;
 }
 
-.cookieButton .fa-check {
-    color: #3d813d !important;
+body[data-theme="light"] #cookie-consent {
+    background-color: #9d9ea1;
 }
 
-.cookieButton .fa-times {
-    color: #a14545 !important;
+body[data-theme="dark"] #cookie-consent {
+    background-color: #080808;
+}
+
+body[data-theme="light"] .cookieButton.g {
+    background-color: #6ddd6d;
+    border-color: #499649; /*  :O  */
+}
+
+body[data-theme="light"] .cookieButton.r {
+    background-color: #d67272;
+    border-color: #b63535;
+}
+
+body[data-theme="dark"] .cookieButton.g {
+    background-color: #306430;
+    border-color: #1a3d1a; /*  :O  */
+}
+
+body[data-theme="dark"] .cookieButton.r {
+    background-color: #6b3535;
+    border-color: #221010;
+}
+
+body[data-theme="light"] .cookieButton span:not(.fas) {
+    color: black;
+}
+
+body[data-theme="dark"] .cookieButton span:not(.fas) {
+    color: white;
+}
+
+.cookieButton.g {
+    background-color: #3d813d;
+}
+
+.cookieButton.r {
+    background-color: #a14545;
 }
 
 @media (max-width: 768px) {
     #cookie-consent {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
@@ -411,6 +451,10 @@ body[data-theme="light"] footer a:hover {
 @media (max-width: 800px) {
     main {
         margin: 1rem;
+    }
+
+    #options {
+        right: 0;
     }
 }
 

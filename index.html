@@ -185,8 +185,10 @@
                 Please accept the usage of functional cookies to enable these features.
             </p>
         </div>
-        <div id="consent-button" class="img-link cookieButton" onclick="consentGranted();"><span><i class="fas fa-check"></i>&nbsp;Accept</span></div>
-        <div id="deny-button" class="img-link cookieButton" onclick="consentDenied();"><span><i class="fas fa-times"></i>&nbsp;Deny</span></div>
+        <div id="consentButtonWrapper">
+            <div id="consent-button" class="img-link cookieButton g" onclick="consentGranted();"><span>Accept</span></div>
+            <div id="deny-button" class="img-link cookieButton r" onclick="consentDenied();"><span>Deny</span></div>
+        </div>
     </div>
     <footer>
         <div></div>
