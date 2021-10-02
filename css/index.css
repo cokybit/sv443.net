@@ -260,11 +260,19 @@ footer {
     background-color: #f1f1f1;
 }
 
-footer a {
+body[data-theme="dark"] footer a {
+    color: #6f85ff;
+}
+
+body[data-theme="dark"] footer a:hover {
+    color: #8b9cff;
+}
+
+body[data-theme="light"] footer a {
     color: #4b67fc;
 }
 
-footer a:hover {
+body[data-theme="light"] footer a:hover {
     color: #6f85fc;
 }
 
