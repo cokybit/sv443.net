@@ -149,6 +149,10 @@ main {
     margin-right: 0;
 }
 
+#logo.pride {
+    background-image: url(../resources/images/Sv443NetworkIcon_pride.png);
+}
+
 #projects {
     display: flex;
     flex-wrap: wrap;

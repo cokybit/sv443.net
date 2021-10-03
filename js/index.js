@@ -84,6 +84,9 @@ function indexonload() {
         });
     if(d.getMonth() == 9 && d.getDate() == 31 || queryStr.includes("spook_mode"))
         getspooked();
+
+    const logo = document.querySelector("#logo");
+    logo.addEventListener("dblclick", () => logo.classList.add("pride"));
 }
 
 function reload() {
