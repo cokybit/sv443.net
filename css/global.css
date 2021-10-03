@@ -35,11 +35,11 @@ body[data-theme="spooky"] {
 }
 
 body[data-theme="light"] #themebtn {
-    background-color: #D8D8D8;
+    background-color: #b6b6b6;
 }
 
 body[data-theme="dark"] #themebtn {
-    background-color: #202020;
+    background-color: #0e0e0e;
 }
 
 body[data-theme="spooky"] #themebtn {
