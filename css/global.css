@@ -13,12 +13,22 @@ html {
     font-size: 18px;
 }
 
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 body {
     background-color: var(--bg-color-light);
     color: black;
     margin: 0;
     padding: 0;
 }
+
 
 body[data-theme="light"] {
     background-color: var(--bg-color-light);

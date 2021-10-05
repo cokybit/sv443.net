@@ -16,6 +16,10 @@
     transition: transform 0.5s;
 }
 
+.img-link:not(.not-block) > .list-item-container > h4 {
+    text-decoration: none;
+}
+
 .img-link:visited {
     color: initial;
 }
@@ -204,6 +208,7 @@ main {
 .list-item-container > h4 {
     font-family: "Roboto Condensed", "Roboto", "Segoe UI", sans-serif;
     margin: 0;
+    text-decoration: none;
 }
 
 #support-img {
@@ -339,6 +344,7 @@ body[data-theme="light"] footer a:hover {
 #cookie-consent {
     position: fixed;
     bottom: 0;
+    left: 0;
     z-index: 99999;
 
     display: none;
@@ -415,10 +421,17 @@ body[data-theme="dark"] .cookieButton span:not(.fas) {
     background-color: #a14545;
 }
 
-@media (max-width: 768px) {
+p.left-align {
+    display: inline-block;
+    text-align: left;
+}
+
+@media (max-width: 800px) {
     #cookie-consent {
         flex-direction: row;
         flex-wrap: wrap;
+        border-top-right-radius: 0;
+        text-align: center;
     }
 }
 
