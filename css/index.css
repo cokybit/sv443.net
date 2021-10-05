@@ -9,15 +9,12 @@
 
 .img-link:not(.not-block) {
     transition: transform 0.2s;
+    text-decoration: none;
 }
 
 .img-link:not(.not-block):hover {
     transform: scale(1.1);
     transition: transform 0.5s;
-}
-
-.img-link:not(.not-block) > .list-item-container > h4 {
-    text-decoration: none;
 }
 
 .img-link:visited {
@@ -208,7 +205,6 @@ main {
 .list-item-container > h4 {
     font-family: "Roboto Condensed", "Roboto", "Segoe UI", sans-serif;
     margin: 0;
-    text-decoration: none;
 }
 
 #support-img {
