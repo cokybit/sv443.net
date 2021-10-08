@@ -173,5 +173,5 @@ function consentGranted()
 
 function consentDenied()
 {
-    document.getElementById("cookie_consent").style.display = "none";
+    document.getElementById("cookie-consent").style.display = "none";
 }
