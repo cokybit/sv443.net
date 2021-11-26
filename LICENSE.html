@@ -71,14 +71,18 @@
             SOFTWARE.<br>
         </div>
         <script>
-            var dateElem = document.getElementById("currentYear");
-            var currentYear = new Date().getFullYear();
+            (() => {
+                function addDate() {
+                    document.querySelector("#currentYear").innerText = new Date().getFullYear();
+                };
 
-            if(dateElem != null)
-            {
-                dateElem.innerHTML = currentYear;
-                console.info("Setting current year to " + currentYear);
-            }
+                if(dateElem)
+                    addDate();
+                else
+                {
+                    document.addEventListener("DOMContentLoaded", addDate);
+                }
+            })();
         </script>
     </body>
 </html>
