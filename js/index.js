@@ -26,18 +26,16 @@ const theme = Object.freeze({
             setCookie("theme_pref", newtheme, 7);
         if(newtheme == "dark")
         {
-            if(document.getElementsByClassName("ph-moon")[0])
+            if(document.querySelector("#themeimg"))
             {
-                document.getElementsByClassName("ph-moon")[0].classList.add("ph-sun");
-                document.getElementsByClassName("ph-moon")[0].classList.remove("ph-moon");
+                document.querySelector("#themeimg").src = "./resources/images/sun.svg";
             }
         }
         else
         {
-            if(document.getElementsByClassName("ph-sun")[0])
+            if(document.querySelector("#themeimg"))
             {
-                document.getElementsByClassName("ph-sun")[0].classList.add("ph-moon");
-                document.getElementsByClassName("ph-sun")[0].classList.remove("ph-sun");
+                document.querySelector("#themeimg").src = "./resources/images/moon.svg";
             }
         }
         document.body.dataset.theme = newtheme;
