@@ -158,3 +158,86 @@ a:not(.noul):hover, .mimica:not(.noul):hover {
     color: #acb8ff;
     text-decoration: underline;
 }
+
+.list-header {
+    justify-content: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.list-header h1 {
+    font-size: 1.8em;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.list {
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.list-item {
+    display: inline-block;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.list-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+}
+
+.list-item-container > h4 {
+    font-family: "Roboto Condensed", "Roboto", "Segoe UI", sans-serif;
+    margin: 0;
+}
+
+.img-link {
+    text-decoration: none;
+    color: initial;
+    cursor: pointer;
+}
+
+.img-link:not(.no-margin) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.img-link:not(.not-block) {
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+
+.img-link:not(.not-block):hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.img-link:visited {
+    color: initial;
+}
+
+img.square {
+    width: 65px;
+    height: 65px;
+    margin: 10px;
+    border-radius: 0%;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+img.rounded.square {
+    border-radius: 10px;
+}
+
+@media (max-width: 550px) {
+    img.square, img.rounded, img.circle {
+        width: 50px;
+        height: 50px;
+    }
+}

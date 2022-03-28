@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 20px;
+}
+
+#apiList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
