@@ -148,12 +148,13 @@ body[data-theme="dark"] h6 {
     color: white;
 }
 
-a {
+a:not(.noul), .mimica:not(.noul) {
+    cursor: pointer;
     color: #8c9eff;
     text-decoration: none;
 }
 
-a:hover {
+a:not(.noul):hover, .mimica:not(.noul):hover {
     color: #acb8ff;
     text-decoration: underline;
 }

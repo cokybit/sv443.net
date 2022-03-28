@@ -10,7 +10,10 @@
 
     <title>Sv443 Network - Impressum</title>
 
-    <script src="./imprint.js"></script>
+    <script src="../js/util.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => insSens("Zum Anzeigen klicken"));
+    </script>
 
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="./imprint.css">
@@ -22,9 +25,14 @@
     </header>
     <main>
         <h3>Angaben gemäß §5 TMG</h3>
-        <p class="insAddress" data-lang="de"></p>
-        <h3>Kontakt</h3>
-        <p class="insContact" data-lang="de"></p>
+        <p>Sven Fehler<br>
+            <br>
+            Anschrift:<br>
+            <span class="insSens" data-type="addr">Bitte JavaScript einschalten, um dies zu sehen</span><br>
+            <br>
+            Telefon: <span class="insSens" data-type="tel">Bitte JavaScript einschalten, um dies zu sehen</span><br>
+            E-Mail: <span class="insSens" data-type="mail">Bitte JavaScript einschalten, um dies zu sehen</span>
+        </p>
         <h4>Haftung für Inhalte</h4>
         <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
             allgemeinen

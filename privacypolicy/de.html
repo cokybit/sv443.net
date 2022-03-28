@@ -12,6 +12,11 @@
 
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="./privacypolicy.css">
+
+    <script src="../js/util.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => insSens("Zum Anzeigen klicken"));
+    </script>
 </head>
 
 <body onload="otheronload();">
@@ -104,11 +109,13 @@
         <h3>Hinweis zur verantwortlichen Stelle</h3>
         <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
         <p>Sven Fehler<br>
-            Käthe-Kollwitz-Weg 15<br>
-            70569 Stuttgart <br>
-            Deutschland</p>
-        <p>Telefon: +49 176 73554985<br>
-            E-Mail: contact@sv443.net</p>
+            <br>
+            Anschrift:<br>
+            <span class="insSens" data-type="addr">Bitte JavaScript einschalten, um dies zu sehen</span><br>
+            <br>
+            Telefon: <span class="insSens" data-type="tel">Bitte JavaScript einschalten, um dies zu sehen</span><br>
+            E-Mail: <span class="insSens" data-type="mail">Bitte JavaScript einschalten, um dies zu sehen</span>
+        </p>
         <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über
             die
             Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-Adressen o. Ä.)

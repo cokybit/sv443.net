@@ -12,6 +12,11 @@
 
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="./privacypolicy.css">
+
+    <script src="../js/util.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => insSens());
+    </script>
 </head>
 
 <body onload="otheronload();">
@@ -110,11 +115,13 @@
         <h3>Information about the responsible party (referred to as the “controller” in the GDPR)</h3>
         <p>The data processing controller on this website is:</p>
         <p>Sven Fehler<br>
-            Käthe-Kollwitz-Weg 15<br>
-            70569 Stuttgart <br>
-            Deutschland</p>
-        <p>Phone: +49 176 73554985<br>
-            E-mail: contact@sv443.net</p>
+            <br>
+            Address:<br>
+            <span class="insSens" data-type="addr">Please enable JavaScript to see this</span><br>
+            <br>
+            Phone: <span class="insSens" data-type="tel">Please enable JavaScript to see this</span><br>
+            E-Mail: <span class="insSens" data-type="mail">Please enable JavaScript to see this</span>
+        </p>
         <p>The controller is the natural person or legal entity that single-handedly or jointly with others makes
             decisions
             as to the purposes of and resources for the processing of personal data (e.g. names, e-mail addresses,

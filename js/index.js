@@ -92,7 +92,7 @@ function reload()
 
 function copyemail()
 {
-    var text = atob("Y29udGFjdEBzdjQ0My5uZXQ="); // anti crawler
+    var text = atob("Y29udGFjdEBzdjQ0My5uZXQ=");
     copyText(text);
 
     let notif = document.getElementById("notif");

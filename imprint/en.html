@@ -10,7 +10,10 @@
 
     <title>Sv443 Network - Legal Information</title>
 
-    <script src="./imprint.js"></script>
+    <script src="../js/util.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => insSens());
+    </script>
 
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="./imprint.css">
@@ -22,9 +25,14 @@
     </header>
     <main>
         <h3>Information pursuant to § 5 TMG</h3>
-        <p class="insAddress" data-lang="en"></p>
-        <h3>Contact</h3>
-        <p class="insContact" data-lang="en"></p>
+        <p>Sven Fehler<br>
+            <br>
+            Address:<br>
+            <span class="insSens" data-type="addr">Please enable JavaScript to see this</span><br>
+            <br>
+            Phone: <span class="insSens" data-type="tel">Please enable JavaScript to see this</span><br>
+            E-Mail: <span class="insSens" data-type="mail">Please enable JavaScript to see this</span>
+        </p>
         <h4>Liability for Contents</h4>
         <p>As service providers, we are liable for own contents of these websites according to Paragraph 7, Sect. 1
             German
