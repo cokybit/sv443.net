@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: "Roboto";
+    src: url("https://sv443.net/resources/fonts/Roboto/Roboto.woff")  format("woff"),
+         url("https://sv443.net/resources/fonts/Roboto/Roboto.woff2") format("woff2"),
+         url("https://sv443.net/resources/fonts/Roboto/Roboto.ttf")   format("truetype");
+}
 
 :root {
     --bg-color: #282c34;

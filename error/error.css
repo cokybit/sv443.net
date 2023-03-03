@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("https://sv443.net/resources/fonts/Roboto/Roboto.woff")  format("woff"),
+         url("https://sv443.net/resources/fonts/Roboto/Roboto.woff2") format("woff2"),
+         url("https://sv443.net/resources/fonts/Roboto/Roboto.ttf")   format("truetype");
+}
+
+body {
+    color: white;
+    font-family: "Roboto", "Segoe UI", "Arial", sans-serif;
+    background-color: #282c34;
+    text-align: center;
+}
+
+h2 {
+    color: orangered;
+}
+
+#errContent {
+    display: inline-block;
+}
+
+a:not(.noul), .mimica:not(.noul) {
+    color: #8f9aff;
+    text-decoration: none;
+}
+
+a:not(.noul):hover, .mimica:not(.noul):hover {
+    color: #bcc2ff;
+    text-decoration: underline;
+}
