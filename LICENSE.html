@@ -107,11 +107,19 @@
                 color: #63a1fd;
             }
         </style>
+
+        <script>
+            function addDate() {
+                document.querySelector("#currentYear").textContent = new Date().getFullYear();
+            };
+
+            document.addEventListener("DOMContentLoaded", addDate);
+        </script>
     </head>
     <body>
         <div class="contentwrapper">
             <h2>Sv443 and Sv443 Network - License</h2>
-            This license applies to all projects that are created by Sv443 / Sven Fehler and all projects that are part of the Sv443 Network, unless stated otherwise.
+            This license applies to all projects that are created by Sv443 / Sven Fehler and all projects that are part of the Sv443 Network, <u>unless stated otherwise.</u>
             <br>
             <div id="tableWrapper">
                 <table id="overviewtable">
@@ -163,7 +171,7 @@
         </div><br>
         <div class="contentwrapper">
             <h2>MIT License</h2>
-            <span id="copyrightchar">&copy;</span> <b>Copyright 2018-<span id="currentYear">2021</span> Sv443 / Sv443 Network / Sven Fehler</b><br><br>
+            <span id="copyrightchar">&copy;</span> <b>Copyright 2018-<span id="currentYear">now</span> Sven Fehler (Sv443) and the Sv443 Network</b><br><br>
             Permission is hereby granted, free of charge, to any person obtaining a copy
             of this software and associated documentation files (the "Software"), to deal
             in the Software without restriction, including without limitation the rights
@@ -185,20 +193,5 @@
                 software.<br>
             </div><br>
         </div>
-
-        <script>
-            (() => {
-                function addDate() {
-                    document.querySelector("#currentYear").innerText = new Date().getFullYear();
-                };
-
-                if(dateElem)
-                    addDate();
-                else
-                {
-                    document.addEventListener("DOMContentLoaded", addDate);
-                }
-            })();
-        </script>
     </body>
 </html>
