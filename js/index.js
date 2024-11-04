@@ -1,5 +1,9 @@
 "use-strict";
 
+// easter egg query strings:
+// ?epilepsy
+// ?wtf
+// ?spook_mode
 
 const theme = Object.freeze({
     change: () => {
@@ -23,7 +27,7 @@ const theme = Object.freeze({
     },
     select: (newtheme) => {
         if(Cookies.get("cookie_consent") == "true")
-            setCookie("theme_pref", newtheme, 7);
+            setCookie("theme_pref", newtheme);
         if(newtheme == "dark")
         {
             if(document.querySelector("#themeimg"))
@@ -52,7 +56,7 @@ const theme = Object.freeze({
         const themePref = Cookies.get("theme_pref");
 
         if(!themePref && cookieConsent)
-            setCookie("theme_pref", "light", 7);
+            setCookie("theme_pref", "light");
         else if(themePref == "dark")
             return theme.select("dark");
 
@@ -60,21 +64,19 @@ const theme = Object.freeze({
     }
 });
 
-function otheronload()
-{
+function otheronload() {
     theme.apply();
 }
 
-function indexonload()
-{
+function indexonload() {
     theme.apply();
 
     const queryStr = window.location.search.substring(1);
     const d = new Date();
 
-    if (queryStr.includes("epilepsy"))
+    if(queryStr.includes("epilepsy"))
         theme.epilepsy();
-    if (queryStr.includes("wtf"))
+    if(queryStr.includes("wtf"))
         rbow({
             "keyCode": 16
         });
@@ -85,14 +87,12 @@ function indexonload()
     logo.addEventListener("dblclick", () => logo.classList.add("pride"));
 }
 
-function reload()
-{
+function reload() {
     window.location.reload();
 }
 
-function copyemail()
-{
-    var text = atob("Y29udGFjdEBzdjQ0My5uZXQ=");
+function copyEmail() {
+    var text = deo("JTYzJTZGJTZFJTc0JTYxJTYzJTc0JTQwJTczJTc2JTM0JTM0JTMzJTJFJTZFJTY1JTc0");
     copyText(text);
 
     let notif = document.getElementById("notif");
@@ -109,15 +109,14 @@ function copyemail()
     }, 2500);
 }
 
-async function copyText(text)
-{
+async function copyText(text) {
     await navigator.clipboard.writeText(text.toString());
 }
 
-var donce = false;
+var rbowOnce = false;
 function rbow(e) {
-    if (e.keyCode == 16 && !donce) {
-        donce = true;
+    if (e.keyCode == 16 && !rbowOnce) {
+        rbowOnce = true;
         document.getElementById("title").dataset.disco = "true";
         let stel = document.createElement("style");
         stel.innerHTML = "*{transform:rotate(2300deg);transition:transform 1000s linear;}";
@@ -125,8 +124,7 @@ function rbow(e) {
     }
 }
 
-function getspooked()
-{
+function getspooked() {
     theme.spooky();
     var audio = new Audio("resources/audio/spooktune.mp3");
     audio.volume = 0.5;
@@ -154,22 +152,23 @@ function getspooked()
     document.getElementById("title").innerHTML = "🎃 Spook443 Network 🎃";
 }
 
-function setCookie(key, value, expires)
-{
+function setCookie(key, value, expires = 365) {
     Cookies.set(key, value, {
         expires: expires,
         SameSite: "Strict"
     })
 }
 
-function consentGranted()
-{
+function consentGranted() {
     document.getElementById("cookie-consent").style.display = "none";
-    setCookie("cookie_consent", "true", 365);
-    setCookie("theme_pref", document.body.dataset.theme, 31);
+    setCookie("cookie_consent", "true");
+    setCookie("theme_pref", document.body.dataset.theme);
 }
 
-function consentDenied()
-{
+function consentDenied() {
     document.getElementById("cookie-consent").style.display = "none";
+}
+
+function deo(str) {
+    return decodeURIComponent(atob(str));
 }
