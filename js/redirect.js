@@ -1,8 +1,8 @@
-function redirect(redirectURL) {
+function redirect(redirectURL, time = 1000) {
     try {
         setTimeout(function () {
             window.location.replace(redirectURL);
-        }, 1000);
+        }, time);
     }
     catch (err) {
         try {
