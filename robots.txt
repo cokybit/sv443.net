@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /error/
+Disallow: /imprint/
+Disallow: /privacypolicy/
+Disallow: /translate/
